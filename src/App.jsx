@@ -6,9 +6,7 @@ import Testimonials from "./components/Testimonials";
 import Navbar from "./components/Navbar";
 import HostAnEvent from "./components/HostAnEvent";
 import Partners from "./components/Partners/Partners";
-import UpcomingEvents from "./components/Events/UpcomingEvents";
 import Community from "./components/Community";
-import PastEvents from "./components/Events/PastEvents";
 import ContactUs from "./components/ContactUs";
 import Events from "./components/Events/Events";
 
