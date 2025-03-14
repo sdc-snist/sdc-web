@@ -1,6 +1,7 @@
 import React from 'react';
 import backgroundImage from '../assets/image-2.png';
 import { Calendar,Mail } from 'lucide-react';
+import rahulImage from '../assets/rahul.jpg';
 const Landing = () => {
 return (
     <section
@@ -92,10 +93,10 @@ return (
                         left: "30%",
                     }}
                 >
-                    <div className="bg-gray-300 w-12 h-12 rounded-full"></div>
+                      <img src={rahulImage} className='bg-gray-300 w-12 h-12 rounded-full'/>
                     <div>
                         <p className="font-semibold">
-                            Mani Krishna{" "}
+                            Rahul Misala{" "}
                             <span className="bg-red-500 text-white text-xs px-2 py-0.5 rounded-full ml-2">
                                 Member
                             </span>
