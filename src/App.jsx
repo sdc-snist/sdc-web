@@ -10,7 +10,7 @@ import ContactUs from "./components/ContactUs";
 import HostAnEvent from "./components/HostAnEvent";
 import Events from "./components/Events/Events";
 import Activities from "./components/Activities";
-import AboutUs from "./components/Aboutus";
+import AboutUs from "./components/AboutUs";
 
 function Home() {
   return (
@@ -22,9 +22,9 @@ function Home() {
       <Events />
       <ContactUs />
       <HostAnEvent />
-      {/* <Testimonials />
-      <Partners /> */}
-      {/* <Community /> */}
+      {/* {/* <Testimonials /> */}
+      {/* <Partners /> */} */}
+      {/* {/* <Community /> */} */}
       <FaqAndFooter />
     </>
   );

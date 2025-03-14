@@ -45,7 +45,7 @@ const AboutUs = () => {
             <img
               src={Speech} // <-- Replace with your image
               alt="Speaker in seminar"
-              className="relative rounded-xl shadow-lg w-full max-w-md object-cover z-10"
+              className="relative rounded-xl shadow-lg w-full max-w-md object-cover "
             />
           </div>
         </div>

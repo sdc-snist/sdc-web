@@ -1,6 +1,10 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+<<<<<<< HEAD
 import logo from "../assets/sdc1.png"; // Import the logo image
+=======
+import logo from "../assets/sdc.png"; // Import the logo image
+>>>>>>> c136cdb (fix: navbar fix)
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,7 +20,7 @@ const Navbar = () => {
           {/* Logo */}
           <div className="flex-shrink-0">
             <Link to="/" className="flex items-center">
-              <img src={logo} alt="SDC Logo" className="h-12 w-12 mr-2" />
+              <img src={logo} alt="SDC Logo" className="h-12 w-full mr-2" />
             </Link>
           </div>
 
