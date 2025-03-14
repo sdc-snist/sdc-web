@@ -3,7 +3,7 @@ export default function HostYourEvent() {
     <div className="bg-black min-h-screen flex items-center justify-center p-6">
       <div className="max-w-5xl w-full grid grid-cols-1 md:grid-cols-2 gap-12">
         {/* Left Section */}
-        <div>
+        <div className="pt-28">
           <h2 className="text-white text-3xl font-bold mb-4">Host an Event with SDC</h2>
           <p className="text-gray-400 mb-6">
             Partner with us to organize impactful technical events at your institution. Join our network of 100+ colleges across India.

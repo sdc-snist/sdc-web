@@ -11,7 +11,7 @@ const FAQPage = () => {
     return (
         <div className="bg-white text-gray-900">
             <div className="max-w-7xl mx-auto p-6 grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div>
+                <div className='pt-20'>
                     <h1 className="text-4xl font-bold mb-2">Frequently</h1>
                     <h2 className="text-4xl font-bold mb-4">asked questions</h2>
                     <p className="mt-4 text-gray-600 text-lg">The FAQ section provides answers to common questions about the event, helping participants understand the rules, registration process, and other essential details.</p>
