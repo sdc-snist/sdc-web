@@ -7,11 +7,15 @@ import FaqAndFooter from "./components/FaqAndFooter";
 import Testimonials from "./components/Testimonials";
 import Navbar from "./components/Navbar";
 import Community from "./components/Community";
+import UpcomingEvents from "./components/UpcomingEvents";
+import PastEvents from "./components/PastEvents";
 function App() {
   return (
     <>
       <Navbar/>
       <Landing/>
+      <UpcomingEvents />
+      <PastEvents />
       <Testimonials />
       <Community />
       <FaqAndFooter/>
