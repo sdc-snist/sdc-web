@@ -1,13 +1,16 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import logo from '../assets/sdc.png'; // Import the logo image
 
 const Navbar = () => {
     return (
-        <nav className="bg-white bg-opacity-50 backdrop-blur-lg shadow-lg fixed w-auto z-10 m-4 rounded-lg ml-100">
+        <nav className="bg-white bg-opacity-50 backdrop-blur-lg shadow-lg fixed w-auto z-10 m-4 rounded-lg ml-107">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex items-center justify-center h-16">
                     <div className="flex-shrink-0">
-                        <Link to="/" className="text-xl font-bold text-gray-800">SDC</Link>
+                        <Link to="/" className="flex items-center">
+                            <img src={logo} alt="SDC Logo" className="h-10 w-10 mr-2" /> 
+                        </Link>
                     </div>
                     <div className="hidden md:block">
                         <div className="ml-10 flex items-baseline space-x-8">

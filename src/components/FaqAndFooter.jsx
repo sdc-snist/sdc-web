@@ -53,7 +53,7 @@ const FAQPage = () => {
             <div className="bg-black text-white mt-12 p-8 m-8 rounded-lg">
                 <footer className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
                     <div className='gap-50'>
-                        <h3 className="font-bold text-2xl">Students Developers Community</h3>
+                        <h3 className="font-bold text-2xl text-[#E32614E5]">Students Developers Community</h3>
                         <p className="mt-4 text-lg">Empowering students through technical education and collaborative learning opportunities across India.</p>
                     </div>
                     <div>

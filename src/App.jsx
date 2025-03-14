@@ -4,17 +4,23 @@ import Landing from "./components/Landing";
 import FaqAndFooter from "./components/FaqAndFooter";
 import Testimonials from "./components/Testimonials";
 import Navbar from "./components/Navbar";
-import HostAnEvent from "./components/HostAnEvent";
-import Partners from "./components/Partners/Partners";
-
-function Home() {
+import Community from "./components/Community";
+import UpcomingEvents from "./components/UpcomingEvents";
+import PastEvents from "./components/PastEvents";
+import ContactUs from "./components/ContactUs";
+function App() {
   return (
     <>
+      <Navbar/>
       <Landing />
       <Testimonials />
       <HostAnEvent />
       <Partners />
-      <FaqAndFooter />
+      <UpcomingEvents />
+      <PastEvents />
+      <Community />
+      <ContactUs />
+      <FaqAndFooter/>
     </>
   );
 }
