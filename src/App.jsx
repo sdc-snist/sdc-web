@@ -1,27 +1,46 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
 import Landing from "./components/Landing";
 import FaqAndFooter from "./components/FaqAndFooter";
 import Testimonials from "./components/Testimonials";
 import Navbar from "./components/Navbar";
+import HostAnEvent from "./components/HostAnEvent";
+import Partners from "./components/Partners/Partners";
 import Community from "./components/Community";
-import UpcomingEvents from "./components/UpcomingEvents";
-import PastEvents from "./components/PastEvents";
 import ContactUs from "./components/ContactUs";
-function App() {
+import Events from "./components/Events/Events";
+
+function Home() {
   return (
     <>
-      <Navbar/>
-      <Landing/>
-      <UpcomingEvents />
-      <PastEvents />
-      <Testimonials />
-      <Community />
+      <Landing />
+      <Events/>
       <ContactUs />
-      <FaqAndFooter/>
+      <HostAnEvent />
+      <Testimonials />
+      <Partners />
+      <Community/>
+      <FaqAndFooter />
     </>
+  );
+}
+
+function App() {
+  return (
+    <Router>
+      <Navbar />
+      <div >
+      <Routes>
+
+        <Route path="/" element={<Home />} />
+        <Route path="/host-event" element={<HostAnEvent />} />
+        <Route path="/contact-us" element={<ContactUs />} />
+        <Route path="/events" element={<Events />} />
+        <Route path="/testimonials" element={<Testimonials />} />
+        <Route path="/partners" element={<Partners />} />  
+      </Routes>
+      </div>
+    </Router>
   );
 }
 
