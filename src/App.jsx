@@ -22,9 +22,6 @@ function Home() {
       <Events />
       <ContactUs />
       <HostAnEvent />
-      {/* {/* <Testimonials /> */}
-      {/* <Partners /> */} */}
-      {/* {/* <Community /> */} */}
       <FaqAndFooter />
     </>
   );
