@@ -11,18 +11,20 @@ import HostAnEvent from "./components/HostAnEvent";
 import Events from "./components/Events/Events";
 import Activities from "./components/Activities";
 import AboutUs from "./components/Aboutus";
+
 function Home() {
   return (
     <>
+      <Navbar />
       <Landing />
       <Activities />
       <AboutUs />
       <Events />
       <ContactUs />
       <HostAnEvent />
-      <Testimonials />
-      <Partners />
-      <Community />
+      {/* <Testimonials />
+      <Partners /> */}
+      {/* <Community /> */}
       <FaqAndFooter />
     </>
   );
@@ -31,7 +33,6 @@ function Home() {
 function App() {
   return (
     <Router>
-      <Navbar />
       <div>
         <Routes>
           <Route path="/" element={<Home />} />
