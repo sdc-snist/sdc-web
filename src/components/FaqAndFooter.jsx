@@ -56,7 +56,7 @@ const FAQPage = () => {
                         <h3 className="font-bold text-2xl text-[#E32614E5]">Students Developers Community</h3>
                         <p className="mt-4 text-lg">Empowering students through technical education and collaborative learning opportunities across India.</p>
                     </div>
-                    <div className='ml-20'>
+                    <div className='md:ml-20'>
                         <h3 className="font-bold text-xl ">Quick Links</h3>
                         <ul className="mt-4 space-y-2 text-lg">
                             <li><a href="#" className="text-gray-400 hover:text-white">Home</a></li>
