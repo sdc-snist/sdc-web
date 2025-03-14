@@ -4,46 +4,46 @@ import { FaStar } from 'react-icons/fa';
 function Testimonials() {
     const clients = [
       {
-        name: "Kate Davis",
-        username: "friable_captain_8",
+        name: "John Doe",
+        username: "john_doe_tech",
+        rating: 4.8,
+        review: "This community has been a game-changer for my career. The resources and support are unmatched.",
+        profilePhoto: "https://randomuser.me/api/portraits/men/10.jpg"
+      },
+      {
+        name: "Jane Smith",
+        username: "jane_smith_dev",
+        rating: 4.7,
+        review: "I've learned so much from the webinars and workshops. Highly recommend joining!",
+        profilePhoto: "https://randomuser.me/api/portraits/women/11.jpg"
+      },
+      {
+        name: "Michael Brown",
+        username: "michael_brown_coder",
         rating: 4.9,
-        review: "The progress tracker is fantastic. It’s motivating to see how much I’ve improved over time. The app has a great mix of",
-        profilePhoto: "https://placehold.co/50x50"
+        review: "The networking opportunities are fantastic. I've connected with so many like-minded professionals.",
+        profilePhoto: "https://randomuser.me/api/portraits/men/12.jpg"
       },
       {
-        name: "Martin Kazlauskas",
-        username: "sartorial_statue_59",
-        rating: 3.2,
-        review: "The progress tracker is fantastic. It’s motivating to see how much I’ve improved over time. The app has a great mix of",
-        profilePhoto: "https://placehold.co/50x50"
+        name: "Emily Davis",
+        username: "emily_davis_techie",
+        rating: 4.6,
+        review: "Great community with a wealth of knowledge. The mentorship program is particularly beneficial.",
+        profilePhoto: "https://randomuser.me/api/portraits/women/13.jpg"
       },
       {
-        name: "Sanjay Sharma",
-        username: "voracious_rainbows_68",
-        rating: 4.9,
-        review: "The progress tracker is fantastic. It’s motivating to see how much I’ve improved over time. The app has a great mix of",
-        profilePhoto: "https://placehold.co/50x50"
+        name: "David Wilson",
+        username: "david_wilson_dev",
+        rating: 4.8,
+        review: "The collaborative projects have helped me grow my skills and portfolio. Amazing experience!",
+        profilePhoto: "https://randomuser.me/api/portraits/men/14.jpg"
       },
       {
-        name: "Tawanna Afumba",
-        username: "intransigent_toejam_15",
-        rating: 3.2,
-        review: "The progress tracker is fantastic. It’s motivating to see how much I’ve improved over time. The app has a great mix of",
-        profilePhoto: "https://placehold.co/50x50"
-      },
-      {
-        name: "Larry King",
-        username: "pendulous_unicorn_46",
-        rating: 4.9,
-        review: "The progress tracker is fantastic. It’s motivating to see how much I’ve improved over time. The app has a great mix of",
-        profilePhoto: "https://placehold.co/50x50"
-      },
-      {
-        name: "Fatima Mohamed",
-        username: "salubrious_artist_72",
-        rating: 3.2,
-        review: "The progress tracker is fantastic. It’s motivating to see how much I’ve improved over time. The app has a great mix of",
-        profilePhoto: "https://placehold.co/50x50"
+        name: "Sophia Martinez",
+        username: "sophia_martinez_coder",
+        rating: 4.7,
+        review: "The community is very welcoming and supportive. I've made great friends and professional connections.",
+        profilePhoto: "https://randomuser.me/api/portraits/women/15.jpg"
       }
     ];
 
@@ -51,7 +51,7 @@ function Testimonials() {
       <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">
-            Our trusted <span className="text-red-500">Members</span>
+            What <span className="text-red-500"> Students </span>Say about us ?
           </h2>
           <p className="mt-4 text-lg leading-6 text-gray-500">
             Our mission is to drive progress and enhance the lives of our customers by delivering superior products and services that exceed expectations.
