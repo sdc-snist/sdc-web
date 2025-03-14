@@ -1,5 +1,5 @@
 import React from 'react';
-import backgroundImage from "../assets/image-2.png"; // Update the path to your background image
+import backgroundImage from "../assets/image-2.png"; 
 
 const Community = () => {
     return (

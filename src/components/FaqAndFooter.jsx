@@ -75,9 +75,16 @@ const FAQPage = () => {
                         </ul>
                     </div>
                     <div className="flex space-x-4 mb-8">
-                        <FaInstagram className="text-red-600 text-2xl" />
-                        <FaLinkedin className="text-red-600 text-2xl" />
-                        <FaTwitter className="text-red-600 text-2xl" />
+                        <a href="https://www.instagram.com/sdc.snist?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer">
+                            <FaInstagram className="text-red-600 text-2xl" />
+                        </a>
+                        <a href="https://www.linkedin.com/company/sdc-snist-student-chapter/?lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_all%3Blcxgm63dTsmhrUGTJumAIA%3D%3D" target="_blank" rel="noopener noreferrer">
+                            <FaLinkedin className="text-red-600 text-2xl" />
+                        </a>
+                        <a href="https://twitter.com/SDC_SNIST" target="_blank" rel="noopener noreferrer">
+                            <FaTwitter className="text-red-600 text-2xl" />
+                            
+                        </a>
                     </div>
                 </footer>
             </div>

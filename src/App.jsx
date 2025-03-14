@@ -20,6 +20,8 @@ function Home() {
       <Activities />
       <AboutUs />
       <Events />
+      <Testimonials/>
+      <Community />
       <ContactUs />
       <HostAnEvent />
       <FaqAndFooter />
