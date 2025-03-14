@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import logo from '../assets/sdc.png'; // Import the logo image
+import logo from '../assets/sdc1.png'; // Import the logo image
 
 const Navbar = () => {
     return (
@@ -9,7 +9,7 @@ const Navbar = () => {
                 <div className="flex items-center justify-center h-16">
                     <div className="flex-shrink-0">
                         <Link to="/" className="flex items-center">
-                            <img src={logo} alt="SDC Logo" className="h-10 w-10 mr-2" /> 
+                            <img src={logo} alt="SDC Logo" className="h-12 w-12 mr-2" /> 
                         </Link>
                     </div>
                     <div className="hidden md:block">
