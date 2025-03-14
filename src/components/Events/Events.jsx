@@ -5,8 +5,8 @@ import UpcomingEvents from './UpcomingEvents'
 const Events = () => {
   return (
     <div>
-      <PastEvents/>
       <UpcomingEvents/>      
+      <PastEvents/>
     </div>
   )
 }
