@@ -17,7 +17,7 @@ const Navbar = () => {
                             <Link to="/" className="text-gray-800 hover:text-gray-600 px-3 py-2 rounded-md text-sm font-medium">Home</Link>
                             <Link to="/events" className="text-gray-800 hover:text-gray-600 px-3 py-2 rounded-md text-sm font-medium">Events</Link>
                             <Link to="/host-event" className="text-gray-800 hover:text-gray-600 px-3 py-2 rounded-md text-sm font-medium">Host Event</Link>
-                            <Link to="/contactus" className="text-gray-800 hover:text-gray-600 px-3 py-2 rounded-md text-sm font-medium">Contact Us</Link>
+                            <Link to="/contact-us" className="text-gray-800 hover:text-gray-600 px-3 py-2 rounded-md text-sm font-medium">Contact Us</Link>
                         </div>
                     </div>
                 </div>
