@@ -1,6 +1,6 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import logo from "../assets/sdc1.png"; // Import the logo image
+import React from 'react';
+import { Link } from 'react-router-dom';
+import logo from '../assets/sdc1.png';
 
 const Navbar = () => {
   return (
