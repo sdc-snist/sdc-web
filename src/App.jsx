@@ -4,23 +4,25 @@ import Landing from "./components/Landing";
 import FaqAndFooter from "./components/FaqAndFooter";
 import Testimonials from "./components/Testimonials";
 import Navbar from "./components/Navbar";
+import HostAnEvent from "./components/HostAnEvent";
+import Partners from "./components/Partners/Partners";
+import UpcomingEvents from "./components/Events/UpcomingEvents";
 import Community from "./components/Community";
-import UpcomingEvents from "./components/UpcomingEvents";
-import PastEvents from "./components/PastEvents";
+import PastEvents from "./components/Events/PastEvents";
 import ContactUs from "./components/ContactUs";
-function App() {
+import Events from "./components/Events/Events";
+
+function Home() {
   return (
     <>
-      <Navbar/>
       <Landing />
-      <Testimonials />
-      <HostAnEvent />
-      <Partners />
-      <UpcomingEvents />
-      <PastEvents />
-      <Community />
+      <Events/>
       <ContactUs />
-      <FaqAndFooter/>
+      <HostAnEvent />
+      <Testimonials />
+      <Partners />
+      <Community/>
+      <FaqAndFooter />
     </>
   );
 }
@@ -31,8 +33,11 @@ function App() {
       <Navbar />
       <div >
       <Routes>
+
         <Route path="/" element={<Home />} />
         <Route path="/host-event" element={<HostAnEvent />} />
+        <Route path="/contact-us" element={<ContactUs />} />
+        <Route path="/events" element={<Events />} />
         <Route path="/testimonials" element={<Testimonials />} />
         <Route path="/partners" element={<Partners />} />  
       </Routes>
