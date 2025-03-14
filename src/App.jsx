@@ -1,6 +1,3 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "./App.css";
 import Landing from "./components/Landing";
 import FaqAndFooter from "./components/FaqAndFooter";
@@ -10,17 +7,21 @@ import Community from "./components/Community";
 import UpcomingEvents from "./components/UpcomingEvents";
 import PastEvents from "./components/PastEvents";
 import ContactUs from "./components/ContactUs";
+import Activities from "./components/Activities";
+import AboutUs from "./components/Aboutus";
 function App() {
   return (
     <>
-      <Navbar/>
-      <Landing/>
+      <Navbar />
+      <Landing />
+      <Activities />
+      <AboutUs />
       <UpcomingEvents />
       <PastEvents />
       <Testimonials />
       <Community />
       <ContactUs />
-      <FaqAndFooter/>
+      <FaqAndFooter />
     </>
   );
 }
