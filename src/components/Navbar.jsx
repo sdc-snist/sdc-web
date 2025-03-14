@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import logo from '../assets/sdc.png';
+import logo from '../assets/sdc.png'; // Import the logo image
 
 const Navbar = () => {
     return (
@@ -8,8 +8,8 @@ const Navbar = () => {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex items-center justify-center h-16">
                     <div className="flex-shrink-0">
-                        <Link to="/">
-                            <img src={logo} alt="SDC Logo" className="h-8 w-auto" /> {/* Add the logo image */}
+                        <Link to="/" className="flex items-center">
+                            <img src={logo} alt="SDC Logo" className="h-10 w-10 mr-2" /> 
                         </Link>
                     </div>
                     <div className="hidden md:block">

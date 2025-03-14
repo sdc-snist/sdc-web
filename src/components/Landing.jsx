@@ -25,6 +25,7 @@ function Landing() {
             collaboration, organize tech events, and provide a platform to grow
             skills and network with like-minded peers.
           </p>
+          <p className="text-red-500 text-2xl">#learnDevelopShare</p>
         </div>
 
         {/* Right Section (Stats Grid) */}

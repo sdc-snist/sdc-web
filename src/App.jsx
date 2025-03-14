@@ -7,6 +7,7 @@ import FaqAndFooter from "./components/FaqAndFooter";
 import Testimonials from "./components/Testimonials";
 import Navbar from "./components/Navbar";
 import Community from "./components/Community";
+import ContactUs from "./components/ContactUs";
 function App() {
   return (
     <>
@@ -14,6 +15,7 @@ function App() {
       <Landing/>
       <Testimonials />
       <Community />
+      <ContactUs />
       <FaqAndFooter/>
     </>
   );
