@@ -1,5 +1,5 @@
 import React from "react";
-import hash2 from "../../assets/Hash1.png";
+import hash2 from "../../assets/Students-Devolopers-Community.png";
 import Python from "../../assets/Python.jpg";
 import uxplosion from "../../assets/Ux-Plosion.jpg";
 import hash1 from "../../assets/Hash1.png";
