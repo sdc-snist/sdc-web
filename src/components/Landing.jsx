@@ -1,7 +1,7 @@
 import React from 'react';
 import backgroundImage from '../assets/image-2.png';
 import { Calendar,Mail } from 'lucide-react';
-import rahulImage from '../assets/rahul.jpg';
+import rahulImage from '../assets/logos/iit.png';
 const Landing = () => {
 return (
   <section

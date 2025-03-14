@@ -11,16 +11,12 @@ import HostAnEvent from "./components/HostAnEvent";
 import Events from "./components/Events/Events";
 import Activities from "./components/Activities";
 import AboutUs from "./components/Aboutus";
-import UpcomingEvents from "./components/UpcomingEvents"; 
-import PastEvents from "./components/PastEvents"; 
 function Home() {
   return (
     <>
       <Landing />
       <Activities />
       <AboutUs />
-      <UpcomingEvents />
-      <PastEvents />
       <Events />
       <ContactUs />
       <HostAnEvent />
