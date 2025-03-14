@@ -18,8 +18,8 @@ function App() {
       <AboutUs />
       <UpcomingEvents />
       <PastEvents />
-      <Testimonials />
-      <Community />
+      {/* <Testimonials /> */}
+      {/* <Community /> */}
       <ContactUs />
       <FaqAndFooter />
     </>
