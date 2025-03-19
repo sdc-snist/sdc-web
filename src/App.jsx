@@ -11,20 +11,44 @@ import HostAnEvent from "./components/HostAnEvent";
 import Events from "./components/Events/Events";
 import Activities from "./components/Activities";
 import AboutUs from "./components/AboutUs";
+import React, { useRef } from "react";
 
 function Home() {
+  const landingRef = useRef(null);
+  const activitiesRef = useRef(null);
+  const aboutUsRef = useRef(null);
+  const eventsRef = useRef(null);
+  const faqRef = useRef(null);
+
+  const handleScroll = (ref) => {
+    ref.current?.scrollIntoView({ behavior: "smooth" });
+  };
   return (
     <>
-      <Navbar />
-      <Landing />
-      <Activities />
-      <AboutUs />
-      <Events />
-      <Testimonials/>
-      <Community />
-      <ContactUs />
-      <HostAnEvent />
-      <FaqAndFooter />
+      <Navbar
+        onLinkClick={handleScroll}
+        refs={{ landingRef, eventsRef, aboutUsRef, faqRef }}
+      />
+
+      <div ref={landingRef}>
+        <Landing />
+      </div>
+
+      <div ref={activitiesRef}>
+        <Activities />
+      </div>
+
+      <div ref={aboutUsRef}>
+        <AboutUs />
+      </div>
+
+      <div ref={eventsRef}>
+        <Events />
+      </div>
+
+      <div ref={faqRef}>
+        <FaqAndFooter />
+      </div>
     </>
   );
 }

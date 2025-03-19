@@ -1,8 +1,7 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 import logo from "../assets/sdc.png"; // Import the logo image
 
-const Navbar = () => {
+const Navbar = ({ onLinkClick, refs }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -15,38 +14,42 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <Link to="/" className="flex items-center">
+            <button
+              onClick={() => onLinkClick(refs.landingRef)}
+              className="flex items-center"
+            >
               <img src={logo} alt="SDC Logo" className="h-12 w-full mr-2" />
-            </Link>
+            </button>
           </div>
 
           {/* Desktop Links */}
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-8">
-              <Link
-                to="/"
+              <button
+                onClick={() => onLinkClick(refs.landingRef)}
                 className="text-gray-800 hover:text-gray-600 px-3 py-2 rounded-md text-xl font-medium"
               >
                 Home
-              </Link>
-              <Link
-                to="/events"
+              </button>
+              <button
+                onClick={() => onLinkClick(refs.eventsRef)}
                 className="text-gray-800 hover:text-gray-600 px-3 py-2 rounded-md text-xl font-medium"
               >
                 Events
-              </Link>
-              <Link
-                to="/host-event"
+              </button>
+              <button
+                onClick={() => onLinkClick(refs.aboutUsRef)}
                 className="text-gray-800 hover:text-gray-600 px-3 py-2 rounded-md text-xl font-medium"
               >
-                Host Event
-              </Link>
-              <Link
-                to="/contact-us"
+                About Us
+              </button>
+
+              <button
+                onClick={() => onLinkClick(refs.faqRef)}
                 className="text-gray-800 hover:text-gray-600 px-3 py-2 rounded-md text-xl font-medium"
               >
-                Contact Us
-              </Link>
+                FAQs
+              </button>
             </div>
           </div>
 
@@ -97,31 +100,44 @@ const Navbar = () => {
 
       {/* Mobile Links */}
       {isOpen && (
-        <div className="md:hidden px-4 pb-4">
-          <Link
-            to="/"
-            className="block text-gray-800 hover:text-gray-600 px-3 py-2 rounded-md text-base font-medium"
+        <div className="md:hidden px-4 pb-4 space-y-2">
+          <button
+            onClick={() => {
+              onLinkClick(refs.landingRef);
+              toggleMenu();
+            }}
+            className="block text-gray-800 hover:text-gray-600 px-3 py-2 rounded-md text-base font-medium w-full text-left"
           >
             Home
-          </Link>
-          <Link
-            to="/events"
-            className="block text-gray-800 hover:text-gray-600 px-3 py-2 rounded-md text-base font-medium"
+          </button>
+          <button
+            onClick={() => {
+              onLinkClick(refs.eventsRef);
+              toggleMenu();
+            }}
+            className="block text-gray-800 hover:text-gray-600 px-3 py-2 rounded-md text-base font-medium w-full text-left"
           >
             Events
-          </Link>
-          <Link
-            to="/host-event"
-            className="block text-gray-800 hover:text-gray-600 px-3 py-2 rounded-md text-base font-medium"
+          </button>
+          <button
+            onClick={() => {
+              onLinkClick(refs.aboutUsRef);
+              toggleMenu();
+            }}
+            className="block text-gray-800 hover:text-gray-600 px-3 py-2 rounded-md text-base font-medium w-full text-left"
           >
-            Host Event
-          </Link>
-          <Link
-            to="/contact-us"
-            className="block text-gray-800 hover:text-gray-600 px-3 py-2 rounded-md text-base font-medium"
+            About Us
+          </button>
+
+          <button
+            onClick={() => {
+              onLinkClick(refs.faqRef);
+              toggleMenu();
+            }}
+            className="block text-gray-800 hover:text-gray-600 px-3 py-2 rounded-md text-base font-medium w-full text-left"
           >
-            Contact Us
-          </Link>
+            FAQs
+          </button>
         </div>
       )}
     </nav>

@@ -1,6 +1,6 @@
 function Card(props) {
   return (
-    <div className="max-w-sm mx-auto mt-7 p-4  border-none rounded-lg shadow-[0px_15px_30px_rgba(0,0,0,0.3)] bg-white place-items-center ">
+    <div className="flex flex-col align-center justify-center max-w-sm mx-auto mt-7 p-4  border-none rounded-lg shadow-[0px_15px_30px_rgba(0,0,0,0.3)] bg-white place-items-center ">
       <img
         src={props.img}
         alt="card image"
