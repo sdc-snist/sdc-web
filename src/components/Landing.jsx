@@ -64,7 +64,7 @@ const Landing = () => {
           >
             <div className="flex items-center gap-2">
               <Calendar className="text-red-500 h-8 w-8 lg:h-10 lg:w-10" />
-              <p className="text-red-500 text-4xl lg:text-5xl font-bold">25+</p>
+              <p className="text-red-500 text-4xl lg:text-5xl font-bold">50+</p>
             </div>
             <p className="font-semibold text-3xl lg:text-4xl">Events</p>
           </div>
