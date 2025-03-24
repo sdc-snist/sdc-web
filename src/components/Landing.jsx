@@ -98,7 +98,7 @@ const Landing = () => {
             }}
           >
             <p className="text-red-500 text-3xl lg:text-4xl font-bold pl-4 pr-4 lg:pl-5 lg:pr-5">
-              100+
+              20+
             </p>
             <p className="font-semibold text-black text-sm lg:text-m">
               College Partners
