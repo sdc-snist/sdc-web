@@ -17,7 +17,7 @@ const Landing = () => {
         {/* Left Content */}
         <div className="max-w-2xl space-y-6">
           <p className="text-[#FFEBB5] font-semibold text-sm lg:text-lg">
-            Elevate your skills with SDC!
+            Elevate your skills with SDC!!
           </p>
           <h1 className="text-3xl lg:text-5xl font-bold leading-tight">
             Empowering student developers through collaboration and learning.
