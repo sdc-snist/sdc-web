@@ -6,7 +6,7 @@ import hash1 from "../../assets/Hash1.png";
 
 const pastEvents = [
     {
-        date: "6 - 22 June 2024",
+        date: "20th November 2024",
         title: "HASH IT OUT - 2.0",
         description: "Second Edition of our flagship event, a 24-hour hackathon.",
         location: "SNIST",
@@ -14,7 +14,7 @@ const pastEvents = [
         image: hash2, 
     },
     {
-        date: "6 - 22 June 2024",
+        date: "7 - 28 June 2024",
         title: "UX-PLOSION",
         description: "36-hour coding marathon with over 500 participants from across India.",
         location: "Virtual",
@@ -30,7 +30,7 @@ const pastEvents = [
         image: Python,
     },
     {
-        date: "6 - 22 June 2024",
+        date: "6th October 2023",
         title: "HASH IT OUT - 1.0",
         description: "State-level hackathon fostering innovation, teamwork, and real-world tech solutions.",
         location: "SNIST",
@@ -78,7 +78,7 @@ return (
 
         {/* See All Button */}
         <div className="mt-10">
-            <button className="border-2 border-[#E32614E5] text-xl text-[#E32614E5] py-2 px-6 rounded-full hover:bg-[#E32614E5] hover:text-white transition">
+            <button className="border-2 cursor-pointer border-[#E32614E5] text-xl text-[#E32614E5] py-2 px-6 rounded-full hover:bg-[#E32614E5] hover:text-white transition">
                 See All
             </button>
         </div>

@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import logo from "../assets/sdc.png"; // Import the logo image
+import { useNavigate } from "react-router-dom";
 
 const Navbar = ({ onLinkClick, refs }) => {
   const [isOpen, setIsOpen] = useState(false);
-
+  const navigate = useNavigate();
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
@@ -15,10 +16,10 @@ const Navbar = ({ onLinkClick, refs }) => {
           {/* Logo */}
           <div className="flex-shrink-0">
             <button
-              onClick={() => onLinkClick(refs.landingRef)}
+              onClick={() => navigate("/")}
               className="flex items-center"
             >
-              <img src={logo} alt="SDC Logo" className="h-12 w-full mr-2" />
+              <img src={logo} alt="SDC Logo" className="h-12 cursor-pointer w-full mr-2" />
             </button>
           </div>
 
@@ -26,27 +27,27 @@ const Navbar = ({ onLinkClick, refs }) => {
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-8">
               <button
-                onClick={() => onLinkClick(refs.landingRef)}
-                className="text-gray-800 hover:text-gray-600 px-3 py-2 rounded-md text-xl font-medium"
+                onClick={() => navigate("/")}
+                className="text-gray-800 hover:text-gray-600 cursor-pointer px-3 py-2 rounded-md text-xl font-medium"
               >
                 Home
               </button>
               <button
-                onClick={() => onLinkClick(refs.eventsRef)}
-                className="text-gray-800 hover:text-gray-600 px-3 py-2 rounded-md text-xl font-medium"
+                onClick={() => navigate("/events")}
+                className="text-gray-800 hover:text-gray-600 cursor-pointer px-3 py-2 rounded-md text-xl font-medium"
               >
                 Events
               </button>
               <button
                 onClick={() => onLinkClick(refs.aboutUsRef)}
-                className="text-gray-800 hover:text-gray-600 px-3 py-2 rounded-md text-xl font-medium"
+                className="text-gray-800 hover:text-gray-600 cursor-pointer px-3 py-2 rounded-md text-xl font-medium"
               >
                 About Us
               </button>
 
               <button
                 onClick={() => onLinkClick(refs.faqRef)}
-                className="text-gray-800 hover:text-gray-600 px-3 py-2 rounded-md text-xl font-medium"
+                className="text-gray-800 hover:text-gray-600 cursor-pointer px-3 py-2 rounded-md text-xl font-medium"
               >
                 FAQs
               </button>

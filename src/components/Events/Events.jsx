@@ -4,8 +4,8 @@ import UpcomingEvents from './UpcomingEvents'
 
 const Events = () => {
   return (
-    <div>
-      <UpcomingEvents/>      
+    <div className='pt-20'>
+      {/* <UpcomingEvents/>       */}
       <PastEvents/>
     </div>
   )

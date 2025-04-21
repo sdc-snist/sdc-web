@@ -38,8 +38,7 @@ const Landing = () => {
               className="px-4 py-2 w-full text-black focus:outline-none"
             />
             <a
-              href="mailto:sdc@sreenidhi.edu.in"
-              className="bg-red-500 text-white px-3 py-2 lg:px-4 lg:py-2 rounded-md inline-block text-center"
+              className="bg-red-500 text-white px-3 py-2 cursor-pointer lg:px-4 lg:py-2 rounded-md inline-block text-center"
             >
               Send
             </a>

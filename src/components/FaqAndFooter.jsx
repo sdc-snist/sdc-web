@@ -6,10 +6,12 @@ import {
   FaLinkedin,
   FaTwitter,
 } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
 const FAQPage = () => {
   const [openIndex, setOpenIndex] = useState(null);
-
+  const navigate = useNavigate();
+  
   const toggleFAQ = (index) => {
     setOpenIndex(openIndex === index ? null : index);
   };
@@ -33,19 +35,18 @@ const FAQPage = () => {
               onClick={() => toggleFAQ(0)}
             >
               <div>
-                <h3 className="font-semibold text-xl">How can I join SDC?</h3>
+                <h3 className="font-semibold text-xl">Who can join SDC?</h3>
                 {openIndex === 0 && (
                   <p className="text-gray-600 mt-2">
-                    You can join SDC by registering through our website or
-                    attending one of our events.
+                    Anyone with a passion for technology, innovation, and learning can join! Whether you're a beginner or an experienced developer, there’s a place for you in SDC.
                   </p>
                 )}
               </div>
               <FaChevronUp
-                className={`text-red-500 ${openIndex === 0 ? "" : "hidden"}`}
+                className={`text-red-500 cursor-pointer ${openIndex === 0 ? "" : "hidden"}`}
               />
               <FaChevronDown
-                className={`text-red-500 ${openIndex === 0 ? "hidden" : ""}`}
+                className={`text-red-500 cursor-pointer ${openIndex === 0 ? "hidden" : ""}`}
               />
             </div>
           </div>
@@ -56,19 +57,19 @@ const FAQPage = () => {
             >
               <div>
                 <h3 className="font-semibold text-xl">
-                  Do we get any discounts on SDC events?
+                How can I become a member?
                 </h3>
                 {openIndex === 1 && (
                   <p className="text-gray-600 mt-2">
-                    Yes, members get discounts on SDC events.
+                    You can fill out the membership form available on our website or reach out to us through our social media channels
                   </p>
                 )}
               </div>
               <FaChevronUp
-                className={`text-red-500 ${openIndex === 1 ? "" : "hidden"}`}
+                className={`text-red-500 cursor-pointer ${openIndex === 1 ? "" : "hidden"}`}
               />
               <FaChevronDown
-                className={`text-red-500 ${openIndex === 1 ? "hidden" : ""}`}
+                className={`text-red-500 cursor-pointer ${openIndex === 1 ? "hidden" : ""}`}
               />
             </div>
           </div>
@@ -82,17 +83,20 @@ const FAQPage = () => {
                   What are the benefits of being a member?
                 </h3>
                 {openIndex === 2 && (
-                  <p className="text-gray-600 mt-2">
-                    Members get access to exclusive resources, events, and
-                    networking opportunities.
-                  </p>
+                  <ul className="text-gray-600 mt-2 list-disc pl-5">
+                    <li>Access to exclusive workshops and events</li>
+                    <li>Mentorship from seniors and industry experts</li>
+                    <li>Networking with like-minded peers</li>
+                    <li>Opportunities to work on real-world projects</li>
+                    <li>Certificates, goodies, and internship recommendations</li>
+                  </ul>
                 )}
               </div>
               <FaChevronUp
-                className={`text-red-500 ${openIndex === 2 ? "" : "hidden"}`}
+                className={`text-red-500 cursor-pointer ${openIndex === 2 ? "" : "hidden"}`}
               />
               <FaChevronDown
-                className={`text-red-500 ${openIndex === 2 ? "hidden" : ""}`}
+                className={`text-red-500 cursor-pointer ${openIndex === 2 ? "hidden" : ""}`}
               />
             </div>
           </div>
@@ -124,7 +128,10 @@ const FAQPage = () => {
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-white">
+                <a onClick={{
+                  onClick: () => navigate("/events"),
+                }}
+                className="text-gray-400 hover:text-white">
                   Events
                 </a>
               </li>

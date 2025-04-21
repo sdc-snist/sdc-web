@@ -25,11 +25,6 @@ function Home() {
   };
   return (
     <>
-      <Navbar
-        onLinkClick={handleScroll}
-        refs={{ landingRef, eventsRef, aboutUsRef, faqRef }}
-      />
-
       <div ref={landingRef}>
         <Landing />
       </div>
@@ -58,6 +53,7 @@ function App() {
   return (
     <Router>
       <div>
+      <Navbar/>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/host-event" element={<HostAnEvent />} />
