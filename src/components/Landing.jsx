@@ -81,10 +81,8 @@ const Landing = () => {
             <div className="text-black text-sm lg:text-lg font-medium">
               ❤Followers
             </div>
-            <p className="text-4xl lg:text-5xl font-bold ">1.5K+</p>
-            <p className="text-xs lg:text-sm text-black font-bold">
-              <span className="text-green-500">15%</span> increase in last 2
-              weeks
+            <p className="text-4xl lg:text-5xl font-bold ">10K+</p>
+            <p className="text-xs lg:text-sm text-black font-bold"> Community Members
             </p>
           </div>
 
