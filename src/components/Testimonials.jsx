@@ -4,46 +4,46 @@ import { FaStar } from 'react-icons/fa';
 function Testimonials() {
     const clients = [
       {
-        name: "Kate Davis",
-        username: "friable_captain_8",
+        name: "Ananya S.",
+        username: "2nd Year CSE",
+        rating: 5.0,
+        review: "I joined the Summer Tech Camp with zero coding knowledge. Today, I can build websites confidently. The mentors were so patient and the environment was super supportive!",
+        profilePhoto: "https://randomuser.me/api/portraits/women/1.jpg"
+      },
+      {
+        name: "Rahul M.",
+        username: "3rd Year IT",
+        rating: 4.8,
+        review: "Our team walked in with just an idea and walked out with a prototype! I made friends from other colleges, learned new tech, and actually had fun doing it.",
+        profilePhoto: "https://randomuser.me/api/portraits/men/2.jpg"
+      },
+      {
+        name: "Shrika Y.",
+        username: "2nd Year ECE",
         rating: 4.9,
-        review: "The progress tracker is fantastic. It’s motivating to see how much I’ve improved over time. The app has a great mix of",
-        profilePhoto: "https://placehold.co/50x50"
+        review: "Before the bootcamp, I had no clue what UI/UX meant. Now I’m designing in Figma, prototyping apps, and even got an internship because of my portfolio!",
+        profilePhoto: "https://randomuser.me/api/portraits/women/3.jpg"
       },
       {
-        name: "Martin Kazlauskas",
-        username: "sartorial_statue_59",
-        rating: 3.2,
-        review: "The progress tracker is fantastic. It’s motivating to see how much I’ve improved over time. The app has a great mix of",
-        profilePhoto: "https://placehold.co/50x50"
+        name: "Muralidhar R.",
+        username: "4th Year CSE",
+        rating: 5.0,
+        review: "From ChatGPT to Midjourney, we explored everything in 3 days! The speakers were inspiring and now I’m considering a career in AI.",
+        profilePhoto: "https://randomuser.me/api/portraits/men/4.jpg"
       },
       {
-        name: "Sanjay Sharma",
-        username: "voracious_rainbows_68",
-        rating: 4.9,
-        review: "The progress tracker is fantastic. It’s motivating to see how much I’ve improved over time. The app has a great mix of",
-        profilePhoto: "https://placehold.co/50x50"
+        name: "Aishwarya T.",
+        username: "3rd Year AI & DS",
+        rating: 4.7,
+        review: "I always thought tech events were just talks. But these were full of energy, real-world insights, and actual hands-on learning. I now network better and feel more confident.",
+        profilePhoto: "https://randomuser.me/api/portraits/women/5.jpg"
       },
       {
-        name: "Tawanna Afumba",
-        username: "intransigent_toejam_15",
-        rating: 3.2,
-        review: "The progress tracker is fantastic. It’s motivating to see how much I’ve improved over time. The app has a great mix of",
-        profilePhoto: "https://placehold.co/50x50"
-      },
-      {
-        name: "Larry King",
-        username: "pendulous_unicorn_46",
-        rating: 4.9,
-        review: "The progress tracker is fantastic. It’s motivating to see how much I’ve improved over time. The app has a great mix of",
-        profilePhoto: "https://placehold.co/50x50"
-      },
-      {
-        name: "Fatima Mohamed",
-        username: "salubrious_artist_72",
-        rating: 3.2,
-        review: "The progress tracker is fantastic. It’s motivating to see how much I’ve improved over time. The app has a great mix of",
-        profilePhoto: "https://placehold.co/50x50"
+        name: "Prem Kiran P.",
+        username: "Final Year CSE",
+        rating: 5.0,
+        review: "Every workshop, bootcamp, and hackathon helped me discover something new—about tech and about myself. SDC has truly shaped my college journey.",
+        profilePhoto: "https://randomuser.me/api/portraits/men/6.jpg"
       }
     ];
 
@@ -54,7 +54,7 @@ function Testimonials() {
             Our trusted <span className="text-red-500">Members</span>
           </h2>
           <p className="mt-4 text-lg leading-6 text-gray-500">
-            Our mission is to drive progress and enhance the lives of our customers by delivering superior products and services that exceed expectations.
+            Our mission is to empower students by fostering a collaborative learning environment, providing hands-on experiences, and inspiring innovation to help them achieve their full potential.
           </p>
         </div>
         <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -67,7 +67,7 @@ function Testimonials() {
                   <FaStar className="text-green-500 ml-1" />
                 </div>
               </div>
-              <p className="mt-4 text-gray-600 italic">"{client.review}"</p>
+              <p className="mt-4 text-gray-900">"{client.review}"</p>
               <div className="mt-4">
                 <p className="text-lg font-bold text-gray-900">{client.name}</p>
                 <p className="text-sm text-gray-500">{client.username}</p>

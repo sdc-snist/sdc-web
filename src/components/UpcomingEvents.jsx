@@ -3,25 +3,11 @@ import { MapPin } from "lucide-react";
 
 const events = [
     {
-        date: "3 April 2025",
-        time: "09:00 AM - 12:20 PM",
-        title: "Blockchain Workshop",
-        description: "Half-day Workshop with Blockchain and Web 3 experts.",
-        location: "SNIST",
-    },
-    {
         date: "13 May 2025",
         time: "09:00 AM - 12:20 PM",
-        title: "Blockchain Workshop",
-        description: "Half-day Workshop with Blockchain and Web 3 experts.",
-        location: "MICROSOFT, HYD",
-    },
-    {
-        date: "3 April 2025",
-        time: "09:00 AM - 12:20 PM",
-        title: "Blockchain Workshop",
-        description: "Half-day Workshop with Blockchain and Web 3 experts.",
-        location: "SNIST",
+        title: "Summer Boot Camp",
+        description: "TBD",
+        location: "VIRTUAL",
     },
 ];
 

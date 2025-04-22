@@ -47,9 +47,9 @@ function Landing() {
 
           {/* Card 3 */}
           <div className="bg-white shadow-lg rounded-xl px-6 py-8 flex flex-col items-center text-center hover:scale-105 transition-transform sm:col-span-2">
-            <div className="text-red-500 text-3xl font-bold">100+</div>
+            <div className="text-red-500 text-3xl font-bold">10,000+</div>
             <p className="text-gray-600 text-lg font-semibold mt-2">
-              College Partners
+              Community Members
             </p>
           </div>
         </div>

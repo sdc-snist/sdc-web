@@ -20,8 +20,13 @@ const FAQPage = () => {
                     <div className="bg-white shadow-md rounded-lg p-6 mb-6">
                         <div className="flex justify-between items-center" onClick={() => toggleFAQ(0)}>
                             <div>
-                                <h3 className="font-semibold text-xl">How can I join SDC?</h3>
-                                {openIndex === 0 && <p className="text-gray-600 mt-2">You can join SDC by registering through our website or attending one of our events.</p>}
+                                <h3 className="font-semibold text-xl">What is SDC-SNIST and who can join?</h3>
+                                {openIndex === 0 && (
+                                    <p className="text-gray-600 mt-2">
+                                        SDC (Student Developers Community) is a student-led tech community at SNIST that empowers students through hands-on learning, workshops, hackathons, and mentorship.
+                                        📌 Anyone from SNIST, regardless of branch or year, who is passionate about tech, design, or innovation can join.
+                                    </p>
+                                )}
                             </div>
                             <FaChevronUp className={`text-red-500 ${openIndex === 0 ? '' : 'hidden'}`} />
                             <FaChevronDown className={`text-red-500 ${openIndex === 0 ? 'hidden' : ''}`} />
@@ -30,8 +35,13 @@ const FAQPage = () => {
                     <div className="bg-white shadow-md rounded-lg p-6 mb-6">
                         <div className="flex justify-between items-center" onClick={() => toggleFAQ(1)}>
                             <div>
-                                <h3 className="font-semibold text-xl">Do we get any discounts on SDC events?</h3>
-                                {openIndex === 1 && <p className="text-gray-600 mt-2">Yes, members get discounts on SDC events.</p>}
+                                <h3 className="font-semibold text-xl">How do I become a member of SDC?</h3>
+                                {openIndex === 1 && (
+                                    <p className="text-gray-600 mt-2">
+                                        Simply fill out our registration form during recruitment drives or approach any core team member.
+                                        🎯 Bonus: Actively participate in events like bootcamps or workshops to increase your chances of getting noticed!
+                                    </p>
+                                )}
                             </div>
                             <FaChevronUp className={`text-red-500 ${openIndex === 1 ? '' : 'hidden'}`} />
                             <FaChevronDown className={`text-red-500 ${openIndex === 1 ? 'hidden' : ''}`} />
@@ -40,11 +50,52 @@ const FAQPage = () => {
                     <div className="bg-white shadow-md rounded-lg p-6 mb-6">
                         <div className="flex justify-between items-center" onClick={() => toggleFAQ(2)}>
                             <div>
-                                <h3 className="font-semibold text-xl">What are the benefits of being a member?</h3>
-                                {openIndex === 2 && <p className="text-gray-600 mt-2">Members get access to exclusive resources, events, and networking opportunities.</p>}
+                                <h3 className="font-semibold text-xl">Do I need to know coding to join or attend events?</h3>
+                                {openIndex === 2 && (
+                                    <p className="text-gray-600 mt-2">
+                                        Not at all! Many of our events, like UI/UX bootcamps and beginner-friendly workshops (Python, Web Dev), are designed for complete beginners.
+                                        🌱 We’re here to help you grow from zero to hero.
+                                    </p>
+                                )}
                             </div>
                             <FaChevronUp className={`text-red-500 ${openIndex === 2 ? '' : 'hidden'}`} />
                             <FaChevronDown className={`text-red-500 ${openIndex === 2 ? 'hidden' : ''}`} />
+                        </div>
+                    </div>
+                    <div className="bg-white shadow-md rounded-lg p-6 mb-6">
+                        <div className="flex justify-between items-center" onClick={() => toggleFAQ(3)}>
+                            <div>
+                                <h3 className="font-semibold text-xl">Are these events paid or free?</h3>
+                                {openIndex === 3 && (
+                                    <p className="text-gray-600 mt-2">
+                                        Most SDC events are completely free or come at a very minimal cost, just to cover goodies or logistics.
+                                        🎁 You also get swags, certificates, and in some cases, real project opportunities or internships.
+                                    </p>
+                                )}
+                            </div>
+                            <FaChevronUp className={`text-red-500 ${openIndex === 3 ? '' : 'hidden'}`} />
+                            <FaChevronDown className={`text-red-500 ${openIndex === 3 ? 'hidden' : ''}`} />
+                        </div>
+                    </div>
+                    <div className="bg-white shadow-md rounded-lg p-6 mb-6">
+                        <div className="flex justify-between items-center" onClick={() => toggleFAQ(4)}>
+                            <div>
+                                <h3 className="font-semibold text-xl">What kind of opportunities can I expect as an active member?</h3>
+                                {openIndex === 4 && (
+                                    <p className="text-gray-600 mt-2">
+                                        As an active participant or volunteer, you’ll get:
+                                        <ul className="list-disc ml-6 mt-2">
+                                            <li>Leadership roles</li>
+                                            <li>Internship and project referrals</li>
+                                            <li>Mentorship from industry experts</li>
+                                            <li>Exposure to national-level events and collaborations</li>
+                                        </ul>
+                                        🚀 SDC is the perfect platform to build your tech journey and network beyond the classroom.
+                                    </p>
+                                )}
+                            </div>
+                            <FaChevronUp className={`text-red-500 ${openIndex === 4 ? '' : 'hidden'}`} />
+                            <FaChevronDown className={`text-red-500 ${openIndex === 4 ? 'hidden' : ''}`} />
                         </div>
                     </div>
                 </div>

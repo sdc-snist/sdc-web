@@ -6,7 +6,7 @@ import hash1 from "../assets/Hash1.png";
 
 const pastEvents = [
     {
-        date: "6 - 22 June 2024",
+        date: "20 NOV 2024",
         title: "HASH IT OUT - 2.0",
         description: "Second Edition of our flagship event, a 24-hour hackathon.",
         location: "SNIST",
@@ -14,7 +14,7 @@ const pastEvents = [
         image: hash2, 
     },
     {
-        date: "6 - 22 June 2024",
+        date: "17 - 28 June 2024",
         title: "UX-PLOSION",
         description: "36-hour coding marathon with over 500 participants from across India.",
         location: "Virtual",
@@ -22,7 +22,7 @@ const pastEvents = [
         image: uxplosion, 
     },
     {
-        date: "6 - 22 June 2024",
+        date: "7 - 14 April 2024",
         title: "PYTHON FOR DATA SCIENCE",
         description: "A hands-on workshop introducing students to Python for data science, covering data analysis, visualization, and lot more",
         location: "Virtual",
@@ -30,7 +30,7 @@ const pastEvents = [
         image: Python,
     },
     {
-        date: "6 - 22 June 2024",
+        date: "6 OCT 2023",
         title: "HASH IT OUT - 1.0",
         description: "State-level hackathon fostering innovation, teamwork, and real-world tech solutions.",
         location: "SNIST",
