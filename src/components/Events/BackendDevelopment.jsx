@@ -16,9 +16,6 @@ const BackendDevelopment = () => {
             </div>
 
             <div className='flex flex-col items-center justify-center mt-10 pb-10 bg-orange-500'>
-                <div className="text-white font-hind-madurai py-5">
-                    <p className='text-4xl font-bold'>TIME LEFT UNTILL THE BOOTCAMP STARTS :</p>
-                </div>
                 <div id="timer" className="text-9xl flex items-center font-bold mt-2">
                     <CountdownTimer targetDate={new Date('2025-05-12T00:00:00')} />
                 </div>
