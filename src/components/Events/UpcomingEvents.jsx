@@ -1,22 +1,24 @@
 import React from "react";
 import { MapPin } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 const events = [
   {
-    date: "Monday 24 March",
-    time: "01:00 PM - 3:30 PM",
-    title: "Aleph Zero: Blockchain Workshop",
+    date: "May 12 - 17 , 2025",
+    time: "6:30 PM - 8:30 PM",
+    title: "Backend Development Summer Bootcamp",
     description: "Sreenidhi Institute of Science & Technology - SNIST",
-    location: "Admin Seminar Hall 1",
+    location: "Virtual",
   },
 ];
 
 const UpcomingEvents = () => {
+  const navigate = useNavigate();
   return (
     <>
       <div className="py-12 px-4 text-center">
         {/* Heading */}
-        <h2 className="text-3xl font-bold mb-8">
+        <h2 className="text-4xl font-bold mb-8">
           <span
             className="underline decoration-red-300 underline-offset-4"
             style={{ textDecorationColor: "#E32614E5" }}
@@ -57,19 +59,14 @@ const UpcomingEvents = () => {
               <div className="p-4">
                 <div className="flex justify-center">
                   <a
-                    href="https://lu.ma/event/evt-vPe8UYwWoogAJde"
+                    onClick={() => navigate("/events/backend-development")}
                     class="luma-checkout--button"
                     data-luma-action="checkout"
                     data-luma-event-id="evt-vPe8UYwWoogAJde"
-                    className="luma-checkout--button bg-red-600 hover:bg-red-700 text-white font-semibold py-3 px-6 rounded inline-block text-center"
+                    className="luma-checkout--button cursor-pointer bg-red-600 hover:bg-red-700 text-white font-semibold py-3 px-6 rounded inline-block text-center"
                   >
                     Register for Event
-                  </a>
-
-                  <script
-                    id="luma-checkout"
-                    src="https://embed.lu.ma/checkout-button.js"
-                  ></script>
+                  </a>  
                 </div>
               </div>
             </div>

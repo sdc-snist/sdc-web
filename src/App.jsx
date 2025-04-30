@@ -11,6 +11,7 @@ import HostAnEvent from "./components/HostAnEvent";
 import Events from "./components/Events/Events";
 import Activities from "./components/Activities";
 import AboutUs from "./components/AboutUs";
+import BackendDevelopment from "./components/Events/BackendDevelopment";
 import React, { useRef } from "react";
 
 function Home() {
@@ -53,14 +54,11 @@ function App() {
   return (
     <Router>
       <div>
-      <Navbar/>
+        <Navbar/>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/host-event" element={<HostAnEvent />} />
-          <Route path="/contact-us" element={<ContactUs />} />
+          <Route path="/events/backend-development" element={<BackendDevelopment />} />
           <Route path="/events" element={<Events />} />
-          <Route path="/testimonials" element={<Testimonials />} />
-          <Route path="/partners" element={<Partners />} />
         </Routes>
       </div>
     </Router>

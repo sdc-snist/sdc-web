@@ -43,7 +43,7 @@ const PastEvents = () => {
 return (
     <div className="py-12 px-4 text-center">
         {/* Heading */}
-        <h2 className="text-3xl font-bold mb-8">
+        <h2 className="text-4xl font-bold mb-8">
             <span className="underline decoration-[#E32614E5] underline-offset-4">Past Events</span>
         </h2>
 

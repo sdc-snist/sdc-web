@@ -6,10 +6,16 @@ import Workshop from "../assets/workshop.svg";
 function Activities() {
   return (
     <>
-      <h1 className="text-center text-3xl bold mt-10 ">
-        Our Community Activities
-        <div className="w-30 h-[5px] bg-red-500 mx-auto my-2"></div>
-      </h1>
+      <div className="flex justify-center items-center mt-10">
+        <h2 className="text-4xl items-center font-bold mb-8">
+            <span
+              className="underline decoration-red-300 underline-offset-4"
+              style={{ textDecorationColor: "#E32614E5" }}
+            >
+              Our Community Activities
+            </span>
+          </h2>
+      </div>
       <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-4">
         <Card
           img={TechTalks}
