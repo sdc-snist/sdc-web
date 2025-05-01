@@ -19,10 +19,11 @@ const Navbar = ({ onLinkClick, refs }) => {
               <img
                 src={logo}
                 alt="SDC Logo"
-                className="h-12 cursor-pointer w-full mr-2"
+                className="h-8 sm:h-10 md:h-12 lg:h-14 xl:h-16 cursor-pointer w-auto mr-2"
               />
             </button>
           </div>
+
 
           {/* Desktop Links */}
           <div className="hidden md:block">
@@ -104,25 +105,25 @@ const Navbar = ({ onLinkClick, refs }) => {
       {isOpen && (
         <div className="md:hidden px-4 pb-4 space-y-2">
           <button
-            onClick={() => {
-              onLinkClick(refs.landingRef);
-              toggleMenu();
-            }}
-            className="block text-gray-800 hover:text-gray-600 px-3 py-2 rounded-md text-base font-medium w-full text-left"
-          >
-            Home
-          </button>
-          <button
-            onClick={() => {
-              onLinkClick(refs.eventsRef);
-              toggleMenu();
-            }}
-            className="block text-gray-800 hover:text-gray-600 px-3 py-2 rounded-md text-base font-medium w-full text-left"
-          >
-            Events
-          </button>
-          <button
-            onClick={() => {
+            onClick={() => {;
+                navigate("/");
+                toggleMenu();
+              }}
+              className="block text-gray-800 hover:text-gray-600 px-3 py-2 rounded-md text-base font-medium w-full text-left"
+              >
+              Home
+              </button>
+              <button
+              onClick={() => {
+                navigate("/events");
+                toggleMenu();
+              }}
+              className="block text-gray-800 hover:text-gray-600 px-3 py-2 rounded-md text-base font-medium w-full text-left"
+              >
+              Events
+              </button>
+              <button
+              onClick={() => {
               onLinkClick(refs.aboutUsRef);
               toggleMenu();
             }}

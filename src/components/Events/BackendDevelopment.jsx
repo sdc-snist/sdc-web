@@ -9,119 +9,119 @@ const BackendDevelopment = () => {
         <div className='min-h-screen bg-[#fcefdc] w-full flex flex-col relative'>
             <SummerbootcampHero />
             <div className='flex flex-col items-center justify-center mb-15'>
-                <button
-                    onClick={() => {
-                        window.open("https://payments.cashfree.com/forms/backend-development-registration", "_blank");
-                    }}
-                    className='bg-orange-500 cursor-pointer font-inter text-black border-2 text-3xl font-bold py-2 px-4 rounded-md hover:bg-orange-600 hover:scale-105 transition duration-300'>
-                    Register Now
-                </button>
+    <button
+        onClick={() => {
+            window.open("https://payments.cashfree.com/forms/backend-development-registration", "_blank");
+        }}
+        className='bg-orange-500 cursor-pointer font-inter text-black border-2 text-xl sm:text-2xl md:text-3xl font-bold py-2 px-4 rounded-md hover:bg-orange-600 hover:scale-105 transition duration-300'>
+        Register Now
+    </button>
+</div>
+<div className='flex flex-col items-center justify-center px-4'>
+    <p className='font-hind-madurai font-light text-base sm:text-lg md:text-xl lg:text-2xl w-full max-w-[1250px] leading-[138%] tracking-[0%] text-center'>
+        Dive into the world of backend development with <span className="text-orange-500 font-light">Backend Summer Bootcamp 2025</span> — a 10-day project-based journey crafted for aspiring developers and curious coders. From JavaScript fundamentals to building full-fledged REST APIs with Node.js, Express, and MongoDB, this bootcamp transforms backend confusion into clarity. You'll learn by doing — coding real-world projects, mastering authentication, and deploying your own backend system. Whether you're starting fresh or upskilling, this summer, build something that matters.
+    </p>
+</div>
+
+<div className='flex flex-col items-center justify-center mt-10 pb-10 bg-orange-500'>
+    <div id="timer" className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl flex items-center font-bold mt-2">
+        <CountdownTimer targetDate={new Date('2025-05-12T18:30:00')} />
+    </div>
+</div>
+
+<div className='flex flex-col items-center justify-center mt-10 mb-25'>
+    <button
+        onClick={() => {
+            window.open("https://payments.cashfree.com/forms/backend-development-registration", "_blank");
+        }}
+        className='bg-orange-500 cursor-pointer font-inter text-black border-2 text-xl sm:text-2xl md:text-3xl font-bold py-2 px-4 rounded-md hover:bg-orange-600 hover:scale-105 transition duration-300'>
+        Register Now
+    </button>
+</div>
+
+<div className='flex flex-col items-center justify-center mt-10'>
+    <img src={fromto} alt="Backend Bootcamp Banner" />
+</div>
+
+<div className='flex flex-col items-center justify-center mt-10 text-3xl sm:text-4xl md:text-5xl font-bold'>
+    Roadmap
+</div>
+
+<div className='flex flex-col items-center justify-center'>
+    <img src={roadmap} alt="roadmap" />
+</div>
+
+{/* <div className="w-full bg-[#fcefdc] text-3xl py-16 px-4 flex justify-center">
+    <div className="max-w-5xl w-full grid grid-cols-2 gap-12 text-black">
+        
+        <div className="space-y-20">
+            <div>
+                <h2 className="font-bold text-4xl">Day 1 : JavaScript Basics</h2>
+                <p className="mt-1">Variables (let, const)<br />Functions (regular + arrow)<br />Loops (for, while, forEach)<br />Arrays & Objects</p>
             </div>
-            <div className='flex flex-col items-center justify-center px-4'>
-                <p className='font-hind-madurai font-light text-[20px] md:text-[24px] lg:text-[28px] w-full max-w-[1250px] leading-[138%] tracking-[0%] text-center'>
-                    Dive into the world of backend development with <span className="text-orange-500 font-light">Backend Summer Bootcamp 2025</span> — a 10-day project-based journey crafted for aspiring developers and curious coders. From JavaScript fundamentals to building full-fledged REST APIs with Node.js, Express, and MongoDB, this bootcamp transforms backend confusion into clarity. You'll learn by doing — coding real-world projects, mastering authentication, and deploying your own backend system. Whether you're starting fresh or upskilling, this summer, build something that matters.
-                </p>
+            <div>
+                <h2 className="font-bold text-4xl">Day 3 : Node.js</h2>
+                <p className="mt-1">Node.js environment<br />CommonJS vs ES Modules<br />Creating a basic server</p>
             </div>
-
-            <div className='flex flex-col items-center justify-center mt-10 pb-10 bg-orange-500'>
-                <div id="timer" className="text-9xl flex items-center font-bold mt-2">
-                    <CountdownTimer targetDate={new Date('2025-05-12T18:30:00')} />
-                </div>
+            <div>
+                <h2 className="font-bold text-4xl">Day 5 : Web Concepts</h2>
+                <p className="mt-1">Server-Client Communication<br />HTTPS Basics<br />& More…</p>
             </div>
-
-            <div className='flex flex-col items-center justify-center mt-10 mb-25'>
-                <button
-                    onClick={() => {
-                        window.open("https://payments.cashfree.com/forms/backend-development-registration", "_blank");
-                    }}
-                    className='bg-orange-500 cursor-pointer font-inter text-black border-2 text-3xl font-bold py-2 px-4 rounded-md hover:bg-orange-600 hover:scale-105 transition duration-300'>
-                    Register Now
-                </button>
-            </div>
-
-            <div className='flex flex-col items-center justify-center mt-10'>
-                <img src={fromto} alt="Backend Bootcamp Banner" />
-            </div>
-
-            <div className='flex flex-col items-center justify-center mt-10 text-5xl font-bold'>
-                Roadmap
-            </div>
-
-            <div className='flex flex-col items-center justify-center'>
-                <img src={roadmap} alt="roadmap" />
-            </div>
-
-            {/* <div className="w-full bg-[#fcefdc] text-3xl py-16 px-4 flex justify-center">
-                <div className="max-w-5xl w-full grid grid-cols-2 gap-12 text-black">
-                    
-                    <div className="space-y-20">
-                        <div>
-                            <h2 className="font-bold text-4xl">Day 1 : JavaScript Basics</h2>
-                            <p className="mt-1">Variables (let, const)<br />Functions (regular + arrow)<br />Loops (for, while, forEach)<br />Arrays & Objects</p>
-                        </div>
-                        <div>
-                            <h2 className="font-bold text-4xl">Day 3 : Node.js</h2>
-                            <p className="mt-1">Node.js environment<br />CommonJS vs ES Modules<br />Creating a basic server</p>
-                        </div>
-                        <div>
-                            <h2 className="font-bold text-4xl">Day 5 : Web Concepts</h2>
-                            <p className="mt-1">Server-Client Communication<br />HTTPS Basics<br />& More…</p>
-                        </div>
-                        <div>
-                            <h2 className="font-bold text-4xl">Day 7 : MongoDB & Mongoose</h2>
-                            <p className="mt-1">Callbacks, Promises<br />Async/Await<br />Higher-order functions</p>
-                        </div>
-                    </div>
-
-                   
-                    <div className="space-y-10">
-                        <div>
-                            <h2 className="font-bold text-4xl">Day 2 : Advanced JavaScript</h2>
-                            <p className="mt-1">Callbacks, Promises<br />Async/Await<br />Higher-order functions</p>
-                        </div>
-                        <div>
-                            <h2 className="font-bold text-4xl">Day 4 : Express.js</h2>
-                            <p className="mt-1">Express Basics<br />Routing</p>
-                        </div>
-                        <div>
-                            <h2 className="font-bold text-4xl">Day 6 : MiddleWares & Authentication</h2>
-                            <p className="mt-1">Middleware<br />Error Handling<br />User auth flow</p>
-                        </div>
-                        <div>
-                            <h2 className="font-bold text-4xl">Day 8 & 9 : Project</h2>
-                            <p className="mt-1">Project building</p>
-                        </div>
-                    </div>
-
-                    <div className="w-full ml-50 text-center text-black font-bold text-4xl">
-                        Day 10 : Project Deployment
-                    </div>
-                </div>
-            </div> */}
-
-            <div className="flex flex-col items-center justify-center mt-10 mb-10 px-4 sm:px-10 md:px-20 lg:px-32 xl:px-40 border-2 border-orange-500 bg-[#EDE1CA] py-10 mx-auto max-w-5xl">
-            <div className="flex flex-col items-center">
-                <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold bg-orange-500 rounded-md p-2">When ?</h1>
-                <p className="text-xl sm:text-2xl md:text-3xl font-bold mt-5">May 12 - 22, 2025</p>
-            </div>
-            <div className="flex flex-col items-center mt-10">
-                <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold bg-orange-500 rounded-md p-2">Where ?</h1>
-                <p className="text-xl sm:text-2xl md:text-3xl font-bold mt-5">Online</p>
-                <p className="text-xl sm:text-2xl md:text-3xl font-bold">6:00 PM to 8:00 PM</p>
-            </div>
-            </div>
-
-
-            <div className='flex flex-col items-center justify-center mt-10 mb-25'>
-                <button
-                    onClick={() => {
-                        window.open("https://payments.cashfree.com/forms/backend-development-registration", "_blank");
-                    }}
-                    className='bg-orange-500 cursor-pointer font-inter text-black border-2 text-3xl font-bold py-2 px-4 rounded-md hover:bg-orange-600 hover:scale-105 transition duration-300'>
-                    Register Now
-                </button>
+            <div>
+                <h2 className="font-bold text-4xl">Day 7 : MongoDB & Mongoose</h2>
+                <p className="mt-1">Callbacks, Promises<br />Async/Await<br />Higher-order functions</p>
             </div>
         </div>
+
+    
+        <div className="space-y-10">
+            <div>
+                <h2 className="font-bold text-4xl">Day 2 : Advanced JavaScript</h2>
+                <p className="mt-1">Callbacks, Promises<br />Async/Await<br />Higher-order functions</p>
+            </div>
+            <div>
+                <h2 className="font-bold text-4xl">Day 4 : Express.js</h2>
+                <p className="mt-1">Express Basics<br />Routing</p>
+            </div>
+            <div>
+                <h2 className="font-bold text-4xl">Day 6 : MiddleWares & Authentication</h2>
+                <p className="mt-1">Middleware<br />Error Handling<br />User auth flow</p>
+            </div>
+            <div>
+                <h2 className="font-bold text-4xl">Day 8 & 9 : Project</h2>
+                <p className="mt-1">Project building</p>
+            </div>
+        </div>
+
+        <div className="w-full ml-50 text-center text-black font-bold text-4xl">
+            Day 10 : Project Deployment
+        </div>
+    </div>
+</div> */}
+
+<div className="flex flex-col items-center justify-center mt-10 mb-10 px-4 sm:px-10 md:px-20 lg:px-32 xl:px-40 border-2 border-orange-500 bg-[#EDE1CA] py-10 mx-auto max-w-5xl">
+    <div className="flex flex-col items-center">
+        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold bg-orange-500 rounded-md p-2">When ?</h1>
+        <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold mt-5">May 12 - 22, 2025</p>
+    </div>
+    <div className="flex flex-col items-center mt-10">
+        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold bg-orange-500 rounded-md p-2">Where ?</h1>
+        <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold mt-5">Online</p>
+        <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold">6:00 PM to 8:00 PM</p>
+    </div>
+</div>
+
+<div className='flex flex-col items-center justify-center mt-10 mb-25'>
+    <button
+        onClick={() => {
+            window.open("https://payments.cashfree.com/forms/backend-development-registration", "_blank");
+        }}
+        className='bg-orange-500 cursor-pointer font-inter text-black border-2 text-xl sm:text-2xl md:text-3xl font-bold py-2 px-4 rounded-md hover:bg-orange-600 hover:scale-105 transition duration-300'>
+        Register Now
+    </button>
+</div>
+
+    </div>
     );
 };
 
