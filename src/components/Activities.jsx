@@ -6,7 +6,7 @@ import Workshop from "../assets/workshop.svg";
 function Activities() {
   return (
     <>
-      <div className="flex justify-center items-center mt-10">
+      <div className="flex justify-center text-center items-center mt-10">
         <h2 className="text-4xl items-center font-bold mb-8">
             <span
               className="underline decoration-red-300 underline-offset-4"
