@@ -25,7 +25,7 @@ const BackendDevelopment = () => {
 
             <div className='flex flex-col items-center justify-center mt-10 pb-10 bg-orange-500'>
                 <div id="timer" className="text-9xl flex items-center font-bold mt-2">
-                    <CountdownTimer targetDate={new Date('2025-05-12T00:00:00')} />
+                    <CountdownTimer targetDate={new Date('2025-05-12T18:30:00')} />
                 </div>
             </div>
 
