@@ -48,7 +48,7 @@ const CountdownTimer = ({ targetDate }) => {
           </div>
           <div className="text-center mb-4 md:mb-0">
             <div className='text-4xl'>{timeLeft.seconds}</div>
-            <div className="text-black text-xl lg:text-4xl md:text-3xl mt-1">Seconds</div>
+            <div className="text-black  text-xl lg:text-4xl md:text-3xl mt-1">Seconds</div>
           </div>
         </div>
       </div>
