@@ -66,7 +66,7 @@ const UpcomingEvents = () => {
                     className="luma-checkout--button cursor-pointer bg-red-600 hover:bg-red-700 text-white font-semibold py-3 px-6 rounded inline-block text-center"
                   >
                     Register for Event
-                  </a>  
+                  </a>
                 </div>
               </div>
             </div>

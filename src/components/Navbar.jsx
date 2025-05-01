@@ -15,11 +15,12 @@ const Navbar = ({ onLinkClick, refs }) => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <button
-              onClick={() => navigate("/")}
-              className="flex items-center"
-            >
-              <img src={logo} alt="SDC Logo" className="h-12 cursor-pointer w-full mr-2" />
+            <button onClick={() => navigate("/")} className="flex items-center">
+              <img
+                src={logo}
+                alt="SDC Logo"
+                className="h-12 cursor-pointer w-full mr-2"
+              />
             </button>
           </div>
 
