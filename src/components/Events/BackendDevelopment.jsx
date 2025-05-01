@@ -23,7 +23,7 @@ const BackendDevelopment = () => {
     </div>
 </div>
 
-<div className='flex flex-col items-center justify-center mt-10 mb-25'>
+<div className='flex flex-col items-center justify-center mt-10 mb-10'>
     <button
         onClick={() => {
             window.open("https://payments.cashfree.com/forms/backend-development-registration", "_blank");
@@ -33,7 +33,7 @@ const BackendDevelopment = () => {
     </button>
 </div>
 
-<div className='flex flex-col items-center justify-center mt-10'>
+<div className='flex flex-col items-center justify-center'>
     <img src={fromto} alt="Backend Bootcamp Banner" />
 </div>
 
