@@ -136,6 +136,7 @@ const Navbar = ({ onLinkClick, refs }) => {
             onClick={() => {
               onLinkClick(refs.faqRef);
               toggleMenu();
+              
             }}
             className="block text-gray-800 hover:text-gray-600 px-3 py-2 rounded-md text-base font-medium w-full text-left"
           >
