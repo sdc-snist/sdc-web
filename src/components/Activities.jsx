@@ -13,6 +13,7 @@ function Activities() {
               style={{ textDecorationColor: "#E32614E5" }}
             >
               Our Community Activities
+              
             </span>
           </h2>
       </div>
