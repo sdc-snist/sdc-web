@@ -18,11 +18,11 @@ export default function SummerbootcampHero() {
 
       {/* Logos for Mobile/Tablet (below banner) */}
           
-      <div className="flex flex-row flex-nowrap justify-start items-center gap-4 mt-8 md:hidden px-4 overflow-x-auto">
-        <img src={nodeLogo} alt="NodeJS" className="w-20 h-20 object-contain flex-shrink-0" />
-        <img src={jsLogo} alt="JavaScript" className="w-20 h-20 object-contain flex-shrink-0" />
-        <img src={mongoLogo} alt="MongoDB" className="w-24 h-24 object-contain flex-shrink-0" />
-        <img src={mernLogo} alt="MERN" className="w-32 h-20 object-contain flex-shrink-0" />
+      <div className="flex flex-row flex-nowrap justify-start items-center gap-4 mt-8 mb-8 md:hidden px-4 overflow-x-auto">
+        <img src={nodeLogo} alt="NodeJS" className="w-18 h-18 object-contain flex-shrink-0" />
+        <img src={jsLogo} alt="JavaScript" className="w-18 h-18 object-contain flex-shrink-0" />
+        <img src={mongoLogo} alt="MongoDB" className="w-18 h-18 object-contain flex-shrink-0" />
+        <img src={mernLogo} alt="MERN" className="w-18 h-18 object-contain flex-shrink-0" />
       </div>
 
 
