@@ -2,13 +2,13 @@ import React from "react";
 import jsLogo from "../../assets/js.png";
 import nodeLogo from "../../assets/node.png";
 import mongoLogo from "../../assets/mongo.png";
-import mernLogo from "../../assets/mern.png";
+import mernLogo from "../../assets/postman.png";
 import bannerText from "../../assets/backend-text.png";
 
 
 export default function SummerbootcampHero() {
   return (
-    <div className="bg-[#fcefdc] w-full flex flex-col items-center relative overflow-hidden">
+    <div className="bg-[#fcefdc] w-full flex flex-col items-center relative ">
       {/* Banner Image */}
       <img
         src={bannerText}
@@ -17,12 +17,14 @@ export default function SummerbootcampHero() {
       />
 
       {/* Logos for Mobile/Tablet (below banner) */}
-      <div className="flex flex-wrap justify-center gap-4 mt-8 md:hidden px-4">
-        <img src={nodeLogo} alt="NodeJS" className="w-20 h-20 object-contain" />
-        <img src={jsLogo} alt="JavaScript" className="w-20 h-20 object-contain" />
-        <img src={mongoLogo} alt="MongoDB" className="w-28 h-28 object-contain" />
-        <img src={mernLogo} alt="MERN" className="w-36 h-20 object-contain" />
+          
+      <div className="flex flex-row flex-nowrap justify-start items-center gap-4 mt-8 md:hidden px-4 overflow-x-auto">
+        <img src={nodeLogo} alt="NodeJS" className="w-20 h-20 object-contain flex-shrink-0" />
+        <img src={jsLogo} alt="JavaScript" className="w-20 h-20 object-contain flex-shrink-0" />
+        <img src={mongoLogo} alt="MongoDB" className="w-24 h-24 object-contain flex-shrink-0" />
+        <img src={mernLogo} alt="MERN" className="w-32 h-20 object-contain flex-shrink-0" />
       </div>
+
 
       {/* Logos for Desktop (absolute positioning) */}
       <div className="hidden md:block absolute inset-0 pointer-events-none">
@@ -32,8 +34,8 @@ export default function SummerbootcampHero() {
         <img src={jsLogo} alt="JavaScript2" className="absolute top-[423px] right-[81px] w-[59px] h-[59px]" />
         <img src={mongoLogo} alt="MongoDB" className="absolute top-[490px] left-[33px] w-[219px] h-[219px]" />
         <img src={mongoLogo} alt="MongoDB2" className="absolute top-[381px] right-[234px] w-[109px] h-[109px]" />
-        <img src={mernLogo} alt="MERN stack" className="absolute top-[410px] left-[174px] w-[214px] h-[107px]" />
-        <img src={mernLogo} alt="MERN stack 2" className="absolute top-[201px] right-[81px] w-[214px] h-[107px]" />
+        <img src={mernLogo} alt="MERN stack" className="absolute top-[410px] left-[174px] w-[109px] h-[109px]" />
+        <img src={mernLogo} alt="MERN stack 2" className="absolute top-[201px] right-[81px] w-[109px] h-[109px]" />
       </div>
     </div>
 
