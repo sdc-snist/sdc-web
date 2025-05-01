@@ -30,6 +30,7 @@ const BackendDevelopment = () => {
         }}
         className='bg-orange-500 cursor-pointer font-inter text-black border-2 text-xl sm:text-2xl md:text-3xl font-bold py-2 px-4 rounded-md hover:bg-orange-600 hover:scale-105 transition duration-300'>
         Register Now
+        
     </button>
 </div>
 
