@@ -4,10 +4,10 @@ import { useNavigate } from "react-router-dom";
 
 const events = [
   {
-    date: "May 12 - 17 , 2025",
-    time: "6:30 PM - 8:30 PM",
+    date: "May 12 - 22 , 2025",
+    time: "6:30 PM - 8:00 PM",
     title: "Backend Development Summer Bootcamp",
-    description: "Sreenidhi Institute of Science & Technology - SNIST",
+    description: "Dive into the world of backend development with Backend Summer Bootcamp 2025 — a 10-day project-based journey crafted for aspiring developers and curious coders.",
     location: "Virtual",
   },
 ];
