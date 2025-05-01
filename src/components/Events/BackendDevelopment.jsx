@@ -9,13 +9,7 @@ const BackendDevelopment = () => {
         <div className='min-h-screen bg-[#fcefdc] w-full flex flex-col relative'>
             <SummerbootcampHero />
             <div className='flex flex-col items-center justify-center mb-15'>
-    <button
-        onClick={() => {
-            window.open("https://payments.cashfree.com/forms/backend-development-registration", "_blank");
-        }}
-        className='bg-orange-500 cursor-pointer font-inter text-black border-2 text-xl sm:text-2xl md:text-3xl font-bold py-2 px-4 rounded-md hover:bg-orange-600 hover:scale-105 transition duration-300'>
-        Register Now
-    </button>
+    
 </div>
 <div className='flex flex-col items-center justify-center px-4'>
     <p className='font-hind-madurai font-light text-base sm:text-lg md:text-xl lg:text-2xl w-full max-w-[1250px] leading-[138%] tracking-[0%] text-center'>
