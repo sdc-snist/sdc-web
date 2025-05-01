@@ -107,7 +107,7 @@ const BackendDevelopment = () => {
     <div className="flex flex-col items-center mt-10">
         <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold bg-orange-500 rounded-md p-2">Where ?</h1>
         <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold mt-5">Online</p>
-        <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold">6:00 PM to 8:00 PM</p>
+        <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold">6:30 PM to 8:00 PM</p>
     </div>
 </div>
 
