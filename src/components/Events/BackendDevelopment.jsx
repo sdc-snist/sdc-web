@@ -25,11 +25,8 @@ const BackendDevelopment = () => {
 
 <div className='flex flex-col items-center justify-center mt-10 mb-10'>
     <button
-        onClick={() => {
-            window.open("https://payments.cashfree.com/forms/backend-development-registration", "_blank");
-        }}
-        className='bg-orange-500 cursor-pointer font-inter text-black border-2 text-xl sm:text-2xl md:text-3xl font-bold py-2 px-4 rounded-md hover:bg-orange-600 hover:scale-105 transition duration-300'>
-        Register Now
+        className='bg-orange-500 cursor-not-allowed font-inter text-black border-2 text-xl sm:text-2xl md:text-3xl font-bold py-2 px-4 rounded-md hover:bg-orange-600 hover:scale-105 transition duration-300'>
+        Registrations Closed
         
     </button>
 </div>
@@ -155,11 +152,9 @@ const BackendDevelopment = () => {
 
 <div className='flex flex-col items-center justify-center mt-10 mb-25'>
     <button
-        onClick={() => {
-            window.open("https://payments.cashfree.com/forms/backend-development-registration", "_blank");
-        }}
-        className='bg-orange-500 cursor-pointer font-inter text-black border-2 text-xl sm:text-2xl md:text-3xl font-bold py-2 px-4 rounded-md hover:bg-orange-600 hover:scale-105 transition duration-300'>
-        Register Now
+        
+        className='bg-orange-500 cursor-not-allowed font-inter text-black border-2 text-xl sm:text-2xl md:text-3xl font-bold py-2 px-4 rounded-md hover:bg-orange-600 hover:scale-105 transition duration-300'>
+        Registrations Closed
     </button>
 </div>
 
