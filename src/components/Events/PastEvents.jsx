@@ -3,8 +3,17 @@ import hash2 from "../../assets/Students-Devolopers-Community.png";
 import Python from "../../assets/Python.jpg";
 import uxplosion from "../../assets/Ux-Plosion.jpg";
 import hash1 from "../../assets/Hash1.png";
+import sdcbackend from "../../assets/sdcbackend.png";
 
 const pastEvents = [
+    {
+        date: "May 12 - 22 , 2025",
+        title: "Backend Development Summer Bootcamp",
+        description: "ackend Summer Bootcamp 2025 — a 10-day project-based journey crafted for aspiring developers and curious coders.",
+        location: "Virtual",
+        participants: "250+",
+        image: sdcbackend,
+    },
     {
         date: "20th November 2024",
         title: "HASH IT OUT - 2.0",
@@ -29,14 +38,14 @@ const pastEvents = [
         participants: "500+",
         image: Python,
     },
-    {
-        date: "6th October 2023",
-        title: "HASH IT OUT - 1.0",
-        description: "State-level hackathon fostering innovation, teamwork, and real-world tech solutions.",
-        location: "SNIST",
-        participants: "500+",
-        image: hash1,
-    },
+    // {
+    //     date: "6th October 2023",
+    //     title: "HASH IT OUT - 1.0",
+    //     description: "State-level hackathon fostering innovation, teamwork, and real-world tech solutions.",
+    //     location: "SNIST",
+    //     participants: "500+",
+    //     image: hash1,
+    // }
 ];
 
 const PastEvents = () => {

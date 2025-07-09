@@ -8,7 +8,7 @@ const Events = () => {
   const navigate = useNavigate();
   return (
     <div className="pt-20">
-      <UpcomingEvents />
+      {/* <UpcomingEvents /> */}
       <PastEvents />
     </div>
   );
