@@ -19,6 +19,8 @@ import AboutUs from "./components/AboutUs";
 import BackendDevelopment from "./components/Events/BackendDevelopment";
 import AiEvent from "./components/Events/AiEvent";
 import React, { useRef } from "react";
+import FAQ from "./components/FAQ";
+import Footer from "./components/Footer";
 
 // Home component
 function Home() {
@@ -51,7 +53,11 @@ function Home() {
       </div>
 
       <div ref={faqRef}>
-        <FaqAndFooter />
+        <FAQ />
+      </div>      
+      
+      <div ref={faqRef}>
+        <Footer />
       </div>
     </>
   );
@@ -71,6 +77,8 @@ function AppWrapper() {
       <Routes>
         <Route path="/aiagent" element={<AiEvent />} />
         <Route path="/" element={<Home />} />
+        <Route path="/about-us" element={ <AboutUs />} />
+        <Route path="/FAQs" element={<FAQ />} />
         <Route
           path="/events/backend-development"
           element={<BackendDevelopment />}

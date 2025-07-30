@@ -41,14 +41,14 @@ const Navbar = ({ onLinkClick, refs }) => {
                 Events
               </button>
               <button
-                onClick={() => onLinkClick(refs.aboutUsRef)}
+                onClick={() => navigate("/about-us")}
                 className="text-gray-800 hover:text-gray-600 cursor-pointer px-3 py-2 rounded-md text-xl font-medium"
               >
                 About Us
               </button>
 
               <button
-                onClick={() => onLinkClick(refs.faqRef)}
+                onClick={() => navigate("/FAQs")}
                 className="text-gray-800 hover:text-gray-600 cursor-pointer px-3 py-2 rounded-md text-xl font-medium"
               >
                 FAQs
