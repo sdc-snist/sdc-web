@@ -21,6 +21,7 @@ import AiEvent from "./components/Events/AiEvent";
 import React, { useRef } from "react";
 import FAQ from "./components/FAQ";
 import Footer from "./components/Footer";
+import AIagent from "./components/AIagent";
 
 // Home component
 function Home() {
@@ -75,7 +76,7 @@ function AppWrapper() {
       {!hideNavbar && <Navbar />}
 
       <Routes>
-        <Route path="/aiagent" element={<AiEvent />} />
+        <Route path="/aiagent" element={<AIagent />} />
         <Route path="/" element={<Home />} />
         <Route path="/about-us" element={ <AboutUs />} />
         <Route path="/FAQs" element={<FAQ />} />
