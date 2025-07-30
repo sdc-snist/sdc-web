@@ -1,3 +1,4 @@
+// FAQPage.jsx
 import React, { useState } from "react";
 import {
   FaChevronUp,
@@ -6,12 +7,10 @@ import {
   FaLinkedin,
   FaTwitter,
 } from "react-icons/fa";
-import { useNavigate } from "react-router-dom";
 
 const FAQPage = () => {
   const [openIndex, setOpenIndex] = useState(null);
-  const navigate = useNavigate();
-  
+
   const toggleFAQ = (index) => {
     setOpenIndex(openIndex === index ? null : index);
   };
@@ -29,83 +28,50 @@ const FAQPage = () => {
           </p>
         </div>
         <div className="mt-8">
-          <div className="bg-white shadow-md rounded-lg p-6 mb-6">
+          {[
+            "How can I join SDC?",
+            "Do we get any discounts on SDC events?",
+            "What are the benefits of being a member?",
+          ].map((question, index) => (
             <div
-              className="flex justify-between items-center"
-              onClick={() => toggleFAQ(0)}
+              key={index}
+              className="bg-white shadow-md rounded-lg p-6 mb-6 transform transition-all duration-300 hover:scale-[1.02] hover:shadow-xl cursor-pointer group"
+              onClick={() => toggleFAQ(index)}
             >
-              <div>
-                <h3 className="font-semibold text-xl">Who can join SDC?</h3>
-                {openIndex === 0 && (
-                  <p className="text-gray-600 mt-2">
-                    Anyone with a passion for technology, innovation, and learning can join! Whether you're a beginner or an experienced developer, there’s a place for you in SDC.
-                  </p>
+              <div className="flex justify-between items-center">
+                <div className="transition-all duration-300">
+                  <h3 className="font-semibold text-xl text-gray-900 group-hover:text-red-500 transition-colors duration-300">
+                    {question}
+                  </h3>
+                  <div
+                    className={`overflow-hidden transition-all duration-300 ${
+                      openIndex === index ? 'max-h-40 opacity-100 mt-2' : 'max-h-0 opacity-0'
+                    }`}
+                  >
+                    <p className="text-gray-600">
+                      {index === 0 &&
+                        "You can join SDC by registering through our website or attending one of our events."}
+                      {index === 1 && "Yes, members get discounts on SDC events."}
+                      {index === 2 &&
+                        "Members get access to exclusive resources, events, and networking opportunities."}
+                    </p>
+                  </div>
+                </div>
+                {openIndex === index ? (
+                  <FaChevronUp className="text-red-500 transition-transform duration-300 rotate-180" />
+                ) : (
+                  <FaChevronDown className="text-red-500 transition-transform duration-300" />
                 )}
               </div>
-              <FaChevronUp
-                className={`text-red-500 cursor-pointer ${openIndex === 0 ? "" : "hidden"}`}
-              />
-              <FaChevronDown
-                className={`text-red-500 cursor-pointer ${openIndex === 0 ? "hidden" : ""}`}
-              />
             </div>
-          </div>
-          <div className="bg-white shadow-md rounded-lg p-6 mb-6">
-            <div
-              className="flex justify-between items-center"
-              onClick={() => toggleFAQ(1)}
-            >
-              <div>
-                <h3 className="font-semibold text-xl">
-                How can I become a member?
-                </h3>
-                {openIndex === 1 && (
-                  <p className="text-gray-600 mt-2">
-                    You can fill out the membership form available on our website or reach out to us through our social media channels
-                  </p>
-                )}
-              </div>
-              <FaChevronUp
-                className={`text-red-500 cursor-pointer ${openIndex === 1 ? "" : "hidden"}`}
-              />
-              <FaChevronDown
-                className={`text-red-500 cursor-pointer ${openIndex === 1 ? "hidden" : ""}`}
-              />
-            </div>
-          </div>
-          <div className="bg-white shadow-md rounded-lg p-6 mb-6">
-            <div
-              className="flex justify-between items-center"
-              onClick={() => toggleFAQ(2)}
-            >
-              <div>
-                <h3 className="font-semibold text-xl">
-                  What are the benefits of being a member?
-                </h3>
-                {openIndex === 2 && (
-                  <ul className="text-gray-600 mt-2 list-disc pl-5">
-                    <li>Access to exclusive workshops and events</li>
-                    <li>Mentorship from seniors and industry experts</li>
-                    <li>Networking with like-minded peers</li>
-                    <li>Opportunities to work on real-world projects</li>
-                    <li>Certificates, goodies, and internship recommendations</li>
-                  </ul>
-                )}
-              </div>
-              <FaChevronUp
-                className={`text-red-500 cursor-pointer ${openIndex === 2 ? "" : "hidden"}`}
-              />
-              <FaChevronDown
-                className={`text-red-500 cursor-pointer ${openIndex === 2 ? "hidden" : ""}`}
-              />
-            </div>
-          </div>
+          ))}
         </div>
       </div>
 
-      <div className="bg-black text-white mt-12 p-8 m-8 rounded-lg">
-        <footer className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div className="gap-50">
+      {/* Footer */}
+      <div className="bg-black text-white mt-12 p-8">
+        <footer className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div>
             <h3 className="font-bold text-2xl text-[#E32614E5]">
               Students Developers Community
             </h3>
@@ -114,81 +80,84 @@ const FAQPage = () => {
               learning opportunities across India.
             </p>
           </div>
-          <div className="md:ml-20">
-            <h3 className="font-bold text-xl ">Quick Links</h3>
+
+          <div>
+            <h3 className="font-bold text-xl">Quick Links</h3>
             <ul className="mt-4 space-y-2 text-lg">
               <li>
-                <a href="#" className="text-gray-400 hover:text-white">
+                <a href="#" className="text-gray-400 hover:text-white transition-colors duration-300">
                   Home
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-white">
+                <a href="#" className="text-gray-400 hover:text-white transition-colors duration-300">
                   About Us
                 </a>
               </li>
               <li>
-                <a onClick={{
-                  onClick: () => navigate("/events"),
-                }}
-                className="text-gray-400 hover:text-white">
+                <a href="#" className="text-gray-400 hover:text-white transition-colors duration-300">
                   Events
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-white">
+                <a href="#" className="text-gray-400 hover:text-white transition-colors duration-300">
                   Contact
                 </a>
               </li>
             </ul>
           </div>
+
           <div>
             <h3 className="font-bold text-xl">Resources</h3>
             <ul className="mt-4 space-y-2 text-lg">
               <li>
-                <a href="#" className="text-gray-400 hover:text-white">
+                <a href="#" className="text-gray-400 hover:text-white transition-colors duration-300">
                   Blog
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-white">
+                <a href="#" className="text-gray-400 hover:text-white transition-colors duration-300">
                   FAQs
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-white">
+                <a href="#" className="text-gray-400 hover:text-white transition-colors duration-300">
                   Support
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-white">
+                <a href="#" className="text-gray-400 hover:text-white transition-colors duration-300">
                   Privacy Policy
                 </a>
               </li>
             </ul>
           </div>
-          <div className="flex space-x-4 mb-8">
-            <a
-              href="https://www.instagram.com/sdc.snist?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaInstagram className="text-red-600 text-2xl" />
-            </a>
-            <a
-              href="https://www.linkedin.com/company/sdc-snist-student-chapter/?lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_all%3Blcxgm63dTsmhrUGTJumAIA%3D%3D"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaLinkedin className="text-red-600 text-2xl" />
-            </a>
-            <a
-              href="https://twitter.com/SDC_SNIST"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaTwitter className="text-red-600 text-2xl" />
-            </a>
+
+          <div>
+            <h3 className="font-bold text-xl mb-4">Follow Us</h3>
+            <div className="flex space-x-4">
+              <a
+                href="https://www.instagram.com/sdc.snist"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaInstagram className="text-red-600 text-2xl hover:scale-110 transition-transform duration-300" />
+              </a>
+              <a
+                href="https://www.linkedin.com/company/sdc-snist-student-chapter"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaLinkedin className="text-red-600 text-2xl hover:scale-110 transition-transform duration-300" />
+              </a>
+              <a
+                href="https://twitter.com/SDC_SNIST"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaTwitter className="text-red-600 text-2xl hover:scale-110 transition-transform duration-300" />
+              </a>
+            </div>
           </div>
         </footer>
       </div>
