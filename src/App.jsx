@@ -1,4 +1,9 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  useLocation,
+} from "react-router-dom";
 import "./App.css";
 import Navbar from "./components/Navbar";
 import Landing from "./components/Landing";
@@ -12,8 +17,10 @@ import Events from "./components/Events/Events";
 import Activities from "./components/Activities";
 import AboutUs from "./components/AboutUs";
 import BackendDevelopment from "./components/Events/BackendDevelopment";
+import AiEvent from "./components/Events/AiEvent";
 import React, { useRef } from "react";
 
+// Home component
 function Home() {
   const landingRef = useRef(null);
   const activitiesRef = useRef(null);
@@ -24,6 +31,7 @@ function Home() {
   const handleScroll = (ref) => {
     ref.current?.scrollIntoView({ behavior: "smooth" });
   };
+
   return (
     <>
       <div ref={landingRef}>
@@ -49,18 +57,34 @@ function Home() {
   );
 }
 
+// App logic wrapper to access location
+function AppWrapper() {
+  const location = useLocation();
+
+  const hideNavbarOnPaths = ["/aiagent"];
+  const hideNavbar = hideNavbarOnPaths.includes(location.pathname);
+
+  return (
+    <>
+      {!hideNavbar && <Navbar />}
+
+      <Routes>
+        <Route path="/aiagent" element={<AiEvent />} />
+        <Route path="/" element={<Home />} />
+        <Route
+          path="/events/backend-development"
+          element={<BackendDevelopment />}
+        />
+        <Route path="/events" element={<Events />} />
+      </Routes>
+    </>
+  );
+}
 
 function App() {
   return (
     <Router>
-      <div>
-        <Navbar/>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/events/backend-development" element={<BackendDevelopment />} />
-          <Route path="/events" element={<Events />} />
-        </Routes>
-      </div>
+      <AppWrapper />
     </Router>
   );
 }
