@@ -53,7 +53,7 @@ const Navbar = () => {
           />
         </div>
         <a
-          href="#register"
+          href="https://payments.cashfree.com/forms?code=register-ai-agent-workshop"
           className="bg-white text-black
              font-bold py-2 px-6 rounded-lg shadow-lg hover:shadow-white/20 
              transition-all duration-300 transform hover:scale-105 border border-gray-300"
@@ -244,7 +244,7 @@ const Footer = () => {
           Seats are limited. Secure your spot today!
         </p>
         <a
-          href="#register-form" // This would link to a registration form
+          href="https://payments.cashfree.com/forms?code=register-ai-agent-workshop" // This would link to a registration form
           className="bg-white  text-black font-bold py-3 px-8 rounded-lg shadow-lg hover:shadow-white/20 transition-all duration-300 transform hover:scale-105"
         >
           Register Now
