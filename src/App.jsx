@@ -76,7 +76,7 @@ function AppWrapper() {
       {!hideNavbar && <Navbar />}
 
       <Routes>
-        <Route path="/aiagent" element={<AIagent />} />
+        <Route path="/aiagent" element={<AiEvent />} />
         <Route path="/" element={<Home />} />
         <Route path="/about-us" element={ <AboutUs />} />
         <Route path="/FAQs" element={<FAQ />} />
