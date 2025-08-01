@@ -329,6 +329,7 @@ const EventDetails = () => {
         </div>
         <div className="flex flex-col items-center justify-center p-4 bg-black/20 backdrop-blur-sm border border-gray-500/20 rounded-xl h-full">
           {/* Make the image fill the width and maintain its aspect ratio */}
+          <h3 className="text-xl font-bold text-white mb-4">Where?</h3>
           <img
             src={vag} // your image variable
             alt="Vaughn Seminar Hall, SNIST"
@@ -343,6 +344,7 @@ const EventDetails = () => {
     - We give it a specific size to make it prominent.
     - 'mb-4' adds space between the icon and the text.
   */}
+          <h3 className="text-xl font-bold text-white mb-1">Time?</h3>
           <img
             src={time}
             alt="Clock icon"
@@ -350,7 +352,6 @@ const EventDetails = () => {
           />
 
           {/* The heading */}
-          <h3 className="text-xl font-bold text-white mb-1">Time?</h3>
 
           {/* The time range */}
           <p className="text-lg text-gray-300">09:30 AM - 04:00 PM</p>
