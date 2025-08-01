@@ -66,7 +66,7 @@ const Speakers = () => {
   const speakers = [
     {
       name: "Chandan Kumar",
-      title: "Founder, Repaatless",
+      title: "Founder, Repeatless",
       imgSrc: chandanImage,
       imgClassName: "",
     },
