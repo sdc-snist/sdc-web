@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import logo from "../../assets/sdc-white.png"; // Import the logo image
-import aiag from "../../assets/aiagent.png"; // Import the logo image
+import aiag from "../../assets/logo AI.png"; // Import the logo image
 import date from "../../assets/dateaug.png"; // Import the logo image
-import vag from "../../assets/vag.png"; // Import the logo image
-import time from "../../assets/clk.png"; // Import the logo image
+import vag from "../../assets/snist.jpg"; // Import the logo image
+import time from "../../assets/930.png"; // Import the logo image
 import chandanImage from "../../assets/chandan.png"; // Example import
 import shubamImage from "../../assets/shubam.png";
 
@@ -168,7 +168,7 @@ const Navbar = () => {
 const HeroSection = () => {
   // Countdown Timer Logic
   const calculateTimeLeft = () => {
-    const difference = +new Date("2025-08-07T10:00:00") - +new Date();
+    const difference = +new Date("2025-08-07T09:30:00") - +new Date();
     let timeLeft = {};
 
     if (difference > 0) {
@@ -310,19 +310,50 @@ const EventDetails = () => {
   return (
     <section id="details" className="py-16 md:py-24">
       <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto text-center">
-        <div className="p-8 bg-black/20 backdrop-blur-sm border border-gray-500/20 rounded-xl">
-          <h3 className="text-xl font-bold text-white mb-2">When?</h3>
-          <img src={date} alt="" srcset="" />
+        <div className="flex flex-col items-center justify-center text-center p-6 bg-black/20 backdrop-blur-sm border border-gray-500/20 rounded-xl h-full">
+          {/* The heading for the card */}
+          <h3 className="text-xl font-bold text-white mb-4">When?</h3>
+
+          {/* The main image/icon for the card.
+    - We give it a prominent size.
+    - 'mb-4' adds space between the image and the date below.
+  */}
+          <img
+            src={date}
+            alt="Calendar and robot icon"
+            className="w-32 h-32 md:w-36 md:h-36 object-contain mb-4"
+          />
+
+          {/* The date text at the bottom */}
           <p className="text-lg text-gray-300">07-Aug-2025</p>
         </div>
-        <div className="p-8 bg-black/20 backdrop-blur-sm border border-gray-500/20 rounded-xl">
-          <img src={vag} alt="" srcset="" />
-          <p className="text-lg text-gray-300">Vaughn Seminar Hall, SNIST</p>
+        <div className="flex flex-col items-center justify-center p-4 bg-black/20 backdrop-blur-sm border border-gray-500/20 rounded-xl h-full">
+          {/* Make the image fill the width and maintain its aspect ratio */}
+          <img
+            src={vag} // your image variable
+            alt="Vaughn Seminar Hall, SNIST"
+            className="w-full h-auto object-cover rounded-lg mb-4"
+          />
+          <p className="text-lg text-gray-300 text-center">
+            Vaughn Seminar Hall, SNIST
+          </p>
         </div>
-        <div className="p-8 bg-black/20 backdrop-blur-sm border border-gray-500/20 rounded-xl">
-          <img src={time} alt="" srcset="" />
-          <h3 className="text-xl font-bold text-white mb-2">Time?</h3>
-          <p className="text-lg text-gray-300">10:00 AM - 04:00 PM</p>
+        <div className="flex flex-col items-center justify-center text-center p-6 bg-black/20 backdrop-blur-sm border border-gray-500/20 rounded-xl h-full">
+          {/* The clock icon. 
+    - We give it a specific size to make it prominent.
+    - 'mb-4' adds space between the icon and the text.
+  */}
+          <img
+            src={time}
+            alt="Clock icon"
+            className="w-28 h-28 md:w-32 md:h-32 mb-4"
+          />
+
+          {/* The heading */}
+          <h3 className="text-xl font-bold text-white mb-1">Time?</h3>
+
+          {/* The time range */}
+          <p className="text-lg text-gray-300">09:30 AM - 04:00 PM</p>
         </div>
       </div>
     </section>
