@@ -4,6 +4,8 @@ import aiag from "../../assets/aiagent.png"; // Import the logo image
 import date from "../../assets/dateaug.png"; // Import the logo image
 import vag from "../../assets/vag.png"; // Import the logo image
 import time from "../../assets/clk.png"; // Import the logo image
+import chandanImage from "../../assets/chandan.png"; // Example import
+import shubamImage from "../../assets/shubam.png";
 
 import {
   ShieldCheck,
@@ -32,10 +34,104 @@ const AiEvent = () => {
       <main className="container mx-auto px-6 py-12 md:py-20">
         <HeroSection />
         <WhatYoullLearn />
+        <Speakers />
         <EventDetails />
       </main>
       <Footer />
     </div>
+  );
+};
+
+const SpeakerCard = ({ imgSrc, name, title, imgClassName }) => {
+  return (
+    <div className="flex flex-col items-center text-center">
+      <div className="w-48 h-48 md:w-56 md:h-56 rounded-lg overflow-hidden bg-gray-700 mb-4 shadow-lg transition-transform duration-300 hover:scale-105">
+        <img
+          src={imgSrc}
+          alt={`Photo of ${name}`}
+          className={`w-full h-full object-cover ${imgClassName}`}
+          onError={(e) => {
+            e.target.onerror = null;
+            e.target.src =
+              "https://placehold.co/224x224/2d3748/ffffff?text=Image+Not+Found";
+          }}
+        />
+      </div>
+      <h3 className="text-2xl font-bold text-white">{name}</h3>
+      <p className="text-lg text-gray-300">{title}</p>
+    </div>
+  );
+};
+const Speakers = () => {
+  const speakers = [
+    {
+      name: "Chandan Kumar",
+      title: "Founder, Repaatless",
+      imgSrc: chandanImage,
+      imgClassName: "",
+    },
+    {
+      name: "Shubam Lal",
+      title: "SDE at Microsoft",
+      imgSrc: shubamImage,
+      imgClassName: "grayscale",
+    },
+  ];
+
+  return (
+    <section className="py-10 md:py-20">
+      <div
+        className="relative bg-[#2c1a5b] w-full max-w-4xl mx-auto rounded-2xl p-8 sm:p-12 border border-purple-500/30 shadow-2xl shadow-purple-900/50"
+        style={{
+          backgroundImage: `
+              radial-gradient(circle at 15% 20%, rgba(128, 90, 213, 0.1), transparent 30%),
+              radial-gradient(circle at 85% 80%, rgba(128, 90, 213, 0.1), transparent 30%)
+            `,
+        }}
+      >
+        {/* Decorative elements */}
+        <div
+          className="absolute top-4 left-4 w-16 h-16 bg-repeat bg-[length:8px_8px]"
+          style={{
+            backgroundImage:
+              "radial-gradient(circle, rgba(255,255,255,0.1) 1px, transparent 1px)",
+          }}
+        ></div>
+        <div
+          className="absolute bottom-4 right-4 w-16 h-16 bg-repeat bg-[length:8px_8px]"
+          style={{
+            backgroundImage:
+              "radial-gradient(circle, rgba(255,255,255,0.1) 1px, transparent 1px)",
+          }}
+        ></div>
+        <div className="absolute top-1/2 -left-2 transform -translate-y-1/2 w-2 h-24 bg-purple-500/50 rounded-full blur-sm"></div>
+        <div className="absolute top-1/4 -right-2 transform -translate-y-1/2 w-2 h-24 bg-purple-500/50 rounded-full blur-sm"></div>
+
+        <h2 className="text-4xl sm:text-5xl font-bold text-white text-center mb-12">
+          Our Speakers
+        </h2>
+
+        <div className="flex flex-col sm:flex-row justify-center items-center gap-12 sm:gap-16">
+          {speakers.map((speaker, index) => (
+            <SpeakerCard
+              key={index}
+              imgSrc={speaker.imgSrc}
+              name={speaker.name}
+              title={speaker.title}
+              imgClassName={speaker.imgClassName}
+            />
+          ))}
+        </div>
+
+        {/* Decorative lines */}
+        <div className="absolute bottom-[-20px] left-[10%] w-[30%] h-[2px] bg-purple-400/30 rounded-full">
+          <div className="absolute top-[-4px] left-[50%] w-2 h-2 bg-purple-400 rounded-full"></div>
+        </div>
+        <div className="absolute top-[-20px] right-[10%] w-[30%] h-[2px] bg-purple-400/30 rounded-full">
+          <div className="absolute top-[-4px] right-[50%] w-2 h-2 bg-purple-400 rounded-full"></div>
+        </div>
+      </div>
+    </section>
   );
 };
 
@@ -46,11 +142,13 @@ const Navbar = () => {
     <header className="sticky top-0 z-50 ">
       <div className="container mx-auto flex items-center justify-between p-4 ">
         <div className="flex items-center space-x-2">
-          <img
-            src={logo}
-            alt="SDC Logo"
-            className="h-8 sm:h-10 md:h-12 lg:h-14 xl:h-16 cursor-pointer w-auto mr-2"
-          />
+          <a href="http://sdcindia.tech">
+            <img
+              src={logo}
+              alt="SDC Logo"
+              className="h-11 sm:h-11 md:h-13 lg:h-15 xl:h-18 cursor-pointer w-auto mr-2"
+            />
+          </a>
         </div>
         <a
           href="https://payments.cashfree.com/forms?code=register-ai-agent-workshop"
