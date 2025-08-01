@@ -22,6 +22,7 @@ import React, { useRef } from "react";
 import FAQ from "./components/FAQ";
 import Footer from "./components/Footer";
 import AIagent from "./components/AIagent";
+import TicketSuccess from "./components/Events/TicketSuccess";
 
 // Home component
 function Home() {
@@ -77,6 +78,7 @@ function AppWrapper() {
 
       <Routes>
         <Route path="/aiagent" element={<AiEvent />} />
+        <Route path="/ticket-success" element={<TicketSuccess />} />
         <Route path="/" element={<Home />} />
         <Route path="/about-us" element={ <AboutUs />} />
         <Route path="/FAQs" element={<FAQ />} />
