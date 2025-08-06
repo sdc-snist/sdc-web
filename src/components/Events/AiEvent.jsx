@@ -150,14 +150,7 @@ const Navbar = () => {
             />
           </a>
         </div>
-        <a
-          href="https://payments.cashfree.com/forms?code=register-ai-agent-workshop"
-          className="bg-white text-black
-             font-bold py-2 px-6 rounded-lg shadow-lg hover:shadow-white/20 
-             transition-all duration-300 transform hover:scale-105 border border-gray-300"
-        >
-          Register Now
-        </a>
+        
       </div>
     </header>
   );
@@ -371,14 +364,10 @@ const Footer = () => {
           Transform Your Future with AI
         </h2>
         <p className="text-gray-400 mb-8">
-          Seats are limited. Secure your spot today!
+          Thank You for your interest in the AI Agent Essentials Workshop 2025!
+          The Registrations are now closed, but stay tuned for future events.
         </p>
-        <a
-          href="https://payments.cashfree.com/forms?code=register-ai-agent-workshop"
-          className="bg-white text-black font-bold py-3 px-8 rounded-lg shadow-lg hover:shadow-white/20 transition-all duration-300 transform hover:scale-105"
-        >
-          Register Now
-        </a>
+        
 
         {/* Social Media Links */}
         <div className="flex justify-center gap-6 mt-8">
