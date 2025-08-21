@@ -3,25 +3,20 @@ import TechTalks from "../assets/TechTalks.svg";
 import Hackathon from "../assets/hackathon.svg";
 import Workshop from "../assets/workshop.svg";
 
+
 function Activities() {
   return (
-    <>
-      <div className="flex justify-center text-center items-center mt-10">
-        <h2 className="text-4xl items-center font-bold mb-8">
-            <span
-              className="underline decoration-red-300 underline-offset-4"
-              style={{ textDecorationColor: "#E32614E5" }}
-            >
-              Our Community Activities
-              
-            </span>
-          </h2>
+    <section className="section section-alt py-16">
+      <div className="flex justify-center text-center items-center mb-12">
+        <h2 className="text-4xl lg:text-5xl font-extrabold text-white mb-2 relative inline-block">
+          <span className="pb-2 border-b-4 border-[var(--color-primary)]">Our Community Activities</span>
+        </h2>
       </div>
-      <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 px-4">
         <Card
           img={TechTalks}
           heading="Tech Talks"
-          desc="Dive into the latest tech trends and insights with our expert-led Tech Talks, designed to expand your knowledge and spark new ideas"
+          desc="Dive into the latest tech trends and insights with our expert-led Tech Talks, designed to expand your knowledge and spark new ideas."
         />
         <Card
           img={Hackathon}
@@ -34,7 +29,7 @@ function Activities() {
           desc="Tackle real-world challenges and develop innovative solutions at our Hackathons, where you'll use technology to make a difference."
         />
       </div>
-    </>
+    </section>
   );
 }
 
