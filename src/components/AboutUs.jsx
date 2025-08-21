@@ -3,9 +3,9 @@ import sdcGroup from "../assets/sdcGroup.png";
 
 const AboutUs = () => {
   return (
-  <section className="section section-alt py-20">
+  <section className="section section-alt py-20 px-2 sm:px-4">
       {/* About Us Heading */}
-      <div className="text-center mb-6">
+  <div className="text-center mb-6 px-1">
         <h2
           className="text-[2.5rem] sm:text-[4rem] md:text-[5.5rem] font-extrabold italic tracking-tight text-white mb-2 leading-tight"
           style={{ fontFamily: 'Inter, Segoe UI, Arial, sans-serif', letterSpacing: '-0.03em' }}
@@ -14,7 +14,7 @@ const AboutUs = () => {
         </h2>
       </div>
       {/* Mission Headline */}
-      <div className="text-center mb-10">
+  <div className="text-center mb-10 px-1">
         <h3 className="text-2xl md:text-2xl font-extrabold text-white mb-3">
           <span className="text-[var(--color-primary)] text-4xl md:text-6xl align-middle">SDC</span>
           <span className="align-middle"> — a mission to empower student developers across India</span>
@@ -26,14 +26,14 @@ const AboutUs = () => {
 
 
       {/* Community Description */}
-      <div className="mb-14 px-4 max-w-6xl mx-auto ">
-    <p className="text-2xl md:text-2xl text-white leading-relaxed text-justify">
+  <div className="mb-14 px-2 sm:px-4 max-w-6xl mx-auto ">
+    <p className="text-2xl">
           SDC is a vibrant, inclusive community of student developers, innovators, and tech enthusiasts. We believe in the power of collaboration, hands-on learning, and peer support to unlock every student's potential. Through workshops, events, and real-world projects, we empower our members to grow their skills, build lasting connections, and make a real impact in the tech world. Whether you're just starting out or looking to level up, you'll find inspiration, mentorship, and opportunity at SDC.
         </p>
       </div>
 
       {/* SDC Group Image Full Width */}
-      <div className="w-full flex justify-center items-center mb-16 px-4 md:px-12 lg:px-24">
+  <div className="w-full flex justify-center items-center mb-16 px-2 sm:px-4 md:px-12 lg:px-24">
         <img
           src={sdcGroup}
           alt="SDC Group"
