@@ -59,18 +59,14 @@ function Activities() {
             }
             style={{ minHeight: '410px' }}
           >
-            <div className="w-20 h-20 flex items-center justify-center rounded-2xl bg-black mb-5 shadow-lg border-2 border-[var(--color-primary)]">
-              <img src={act.img} alt="activity" className="w-14 h-14 object-contain" />
-            </div>
-            <h3 className="text-3xl font-extrabold text-center mb-3 tracking-tight">
-              <span className={`bg-gradient-to-r ${act.accent} bg-clip-text text-transparent`}>{act.heading[0]}</span>{' '}
-              <span className="text-white">{act.heading[1]}</span>
+            <h3 className="text-4xl md:text-5xl font-extrabold italic text-center mb-4 tracking-tight">
+              <span className={`bg-gradient-to-r ${act.accent} bg-clip-text text-transparent italic`}>{act.heading[0]}</span>{' '}
+              <span className="text-white italic">{act.heading[1]}</span>
             </h3>
-            <ul className="mt-2 space-y-2 text-[1.08rem] text-[var(--color-text-muted)] font-medium w-full max-w-xs mx-auto">
+            <ul className="mt-2 text-lg md:text-xl text-[var(--color-text-muted)] font-semibold w-full max-w-xs mx-auto divide-y divide-[var(--color-border)]">
               {act.features.map((feature, i) => (
-                <li key={i} className="flex items-center gap-2">
-                  <span className="inline-block w-2 h-2 rounded-full bg-[var(--color-primary)]"></span>
-                  <span>{feature}</span>
+                <li key={i} className="py-3 px-1 first:pt-0 last:pb-0">
+                  {feature}
                 </li>
               ))}
             </ul>

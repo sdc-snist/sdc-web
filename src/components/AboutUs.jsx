@@ -6,8 +6,11 @@ const AboutUs = () => {
   <section className="section section-alt py-20">
       {/* About Us Heading */}
       <div className="text-center mb-6">
-        <h2 className="text-5xl md:text-6xl font-extrabold text-white mb-2 leading-tight">
-          About Us
+        <h2
+          className="text-[2.5rem] sm:text-[4rem] md:text-[5.5rem] font-extrabold italic tracking-tight text-white mb-2 leading-tight"
+          style={{ fontFamily: 'Inter, Segoe UI, Arial, sans-serif', letterSpacing: '-0.03em' }}
+        >
+          About <span className="text-[var(--color-primary)] not-italic">Us</span>
         </h2>
       </div>
       {/* Mission Headline */}
@@ -21,14 +24,12 @@ const AboutUs = () => {
         </p>
       </div>
 
-      {/* Stats Row */}
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 justify-center mb-14 px-2">
-        {[{stat:'1500+',label:'Members'},{stat:'60+',label:'Events'},{stat:'₹10 Cr+',label:'Impact'},{stat:'2000+',label:'Participants'}].map((item, i) => (
-          <div key={i} className="card flex flex-col items-center justify-center w-full h-40 md:w-48 md:h-48 aspect-square p-4 text-center">
-            <div className="stat break-words leading-tight text-4xl md:text-6xl">{item.stat}</div>
-            <div className="stat-label break-words leading-tight text-base md:text-xl mt-2">{item.label}</div>
-          </div>
-        ))}
+
+      {/* Community Description */}
+      <div className="mb-14 px-4 max-w-6xl mx-auto ">
+    <p className="text-2xl md:text-2xl text-white leading-relaxed text-justify">
+          SDC is a vibrant, inclusive community of student developers, innovators, and tech enthusiasts. We believe in the power of collaboration, hands-on learning, and peer support to unlock every student's potential. Through workshops, events, and real-world projects, we empower our members to grow their skills, build lasting connections, and make a real impact in the tech world. Whether you're just starting out or looking to level up, you'll find inspiration, mentorship, and opportunity at SDC.
+        </p>
       </div>
 
       {/* SDC Group Image Full Width */}

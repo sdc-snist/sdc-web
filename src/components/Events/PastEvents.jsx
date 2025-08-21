@@ -59,8 +59,11 @@ const PastEvents = () => {
   return (
   <section className="section section-alt py-16 px-4 text-center">
       {/* Heading */}
-      <h2 className="text-4xl lg:text-5xl font-extrabold text-white mb-10 relative inline-block">
-        <span className="pb-2 border-b-4 border-[var(--color-primary)]">Past Events</span>
+      <h2
+        className="text-[2.5rem] sm:text-[4rem] md:text-[5.5rem] font-extrabold italic tracking-tight text-white mb-10 leading-tight"
+        style={{ fontFamily: 'Inter, Segoe UI, Arial, sans-serif', letterSpacing: '-0.03em' }}
+      >
+        <span className="text-[var(--color-primary)] not-italic">Past Events</span>
       </h2>
 
       {/* Events Grid using flex */}

@@ -17,7 +17,7 @@ const Landing = () => {
       </h1>
       <div className="w-full flex flex-col md:flex-row items-center justify-center mt-2 mb-0">
         <div className="w-full md:w-1/2 flex justify-center md:justify-end order-2 md:order-1 mt-10 md:mt-0">
-          <a className="btn bg-[var(--color-primary)] hover:bg-[var(--color-primary-light)] text-black hover:text-black font-bold text-xl px-10 py-4 rounded-xl shadow-xl transition-all duration-200 mt-8" href="#events">
+          <a className="btn bg-[var(--color-primary)] hover:bg-[var(--color-primary-light)] text-black font-bold text-xl px-10 py-4 rounded-xl shadow-xl transition-all duration-200 mt-8" style={{color: '#000'}} href="#events">
             Join Community
           </a>
         </div>
@@ -25,7 +25,7 @@ const Landing = () => {
           Join a vibrant community where you <span className="text-[var(--color-primary)]">collaborate</span>, <span className="text-[var(--color-primary)]">learn</span>, and <span className="text-[var(--color-primary)]">build new skills</span> for the future.
         </div>
       </div>
-      <div className="w-full flex flex-col md:flex-row items-center justify-center gap-12 mt-16 mb-0">
+      <div className="w-full flex flex-row items-center justify-center gap-12 mt-16 mb-0">
         <div className="flex-1 flex flex-col items-center">
           <div className="text-4xl md:text-5xl font-extrabold text-white mb-2">1500+</div>
           <div className="text-xl text-[var(--color-text-muted)]">Members</div>
@@ -35,8 +35,8 @@ const Landing = () => {
           <div className="text-xl text-[var(--color-text-muted)]">Events</div>
         </div>
         <div className="flex-1 flex flex-col items-center">
-          <div className="text-4xl md:text-5xl font-extrabold text-white mb-2">₹10 Cr+</div>
-          <div className="text-xl text-[var(--color-text-muted)]">Impact</div>
+          <div className="text-4xl md:text-5xl font-extrabold text-white mb-2">15K+</div>
+          <div className="text-xl text-[var(--color-text-muted)]">Students Impacted</div>
         </div>
       </div>
     </div>

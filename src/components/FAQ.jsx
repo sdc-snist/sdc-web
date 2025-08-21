@@ -29,7 +29,12 @@ const FAQPage = () => {
   <section className="section section-alt py-20 min-h-screen flex flex-col items-center">
       {/* Header Section */}
       <div className="max-w-4xl text-center mb-14">
-        <h1 className="text-4xl lg:text-5xl font-extrabold text-white mb-2">Frequently <span className="text-[var(--color-primary)]">Asked Questions</span></h1>
+        <h1
+          className="text-[2.5rem] sm:text-[4rem] md:text-[5.5rem] font-extrabold italic tracking-tight text-white mb-2 leading-tight"
+          style={{ fontFamily: 'Inter, Segoe UI, Arial, sans-serif', letterSpacing: '-0.03em' }}
+        >
+          Frequently <span className="text-[var(--color-primary)] not-italic">Asked Questions</span>
+        </h1>
         <p className="mt-6 text-[var(--color-text-muted)] text-lg">
           Find answers to common questions about our community, events, and membership benefits.
         </p>
