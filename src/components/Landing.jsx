@@ -4,16 +4,20 @@ import sdcImage from "../assets/sdc1.png";
 
 const Landing = () => {
   return (
-    <section className="section relative overflow-hidden min-h-[80vh] flex items-center justify-center">
+  <section className="section relative overflow-hidden min-h-[80vh] flex items-center justify-center pt-1 mt-[-1.5rem] md:mt-0">
       <div className="absolute inset-0 bg-[var(--color-bg)] opacity-100 z-0"></div>
-      <div className="relative z-10 max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-16 py-12 px-4">
+      <div className="relative z-10 max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-8 py-6 px-4">
         {/* Left Content */}
         <div className="max-w-2xl space-y-8 text-center lg:text-left">
           <p className="text-[var(--color-primary)] font-bold text-lg uppercase tracking-widest mb-2">Elevate your skills with SDC!</p>
-          <h1 className="text-4xl lg:text-6xl font-extrabold leading-tight mb-4">
-            Empowering <span className="text-[var(--color-primary)]">student developers</span><br className="hidden md:block" /> through collaboration & learning.
+          <h1 className="text-4xl xs:text-5xl md:text-6xl font-extrabold leading-tight mb-4 drop-shadow-lg">
+            <span className="bg-gradient-to-r from-[#ff4c4c] via-[#ff6b6b] to-white bg-clip-text text-transparent">
+              Empowering <span className="text-white">student developers</span>
+            </span>
+            <br className="hidden md:block" />
+            <span className="text-white">through collaboration & learning.</span>
           </h1>
-          <p className="text-[var(--color-text-muted)] text-lg lg:text-xl mb-6">
+          <p className="hidden md:block text-[var(--color-text-muted)] text-lg lg:text-xl mb-6">
             SDC is a community of passionate student developers dedicated to learning, building, and innovating together. We foster collaboration, organize tech events, and provide a platform to grow skills and network with like-minded peers.
           </p>
           {/* Email Input */}

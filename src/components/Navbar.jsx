@@ -12,16 +12,16 @@ const Navbar = ({ onLinkClick, refs }) => {
   };
 
   return (
-  <nav className="navbar mx-auto mt-6 mb-8 bg-black/40 backdrop-blur-md shadow-lg border border-[var(--color-border)] rounded-2xl max-w-6xl">
+  <nav className="navbar mx-auto mt-2 md:mt-6 mb-8 bg-black/40 backdrop-blur-md shadow-lg border border-[var(--color-border)] rounded-2xl max-w-6xl">
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
-        <div className="flex items-center justify-between h-20">
+        <div className="flex items-center justify-between h-14">
           {/* Logo */}
           <div className="flex-shrink-0">
             <button onClick={() => navigate("/")} className="flex items-center">
               <img
                 src={logo}
                 alt="SDC Logo"
-                className="h-12 w-auto mr-3 drop-shadow-lg"
+                className="h-8 w-auto mr-3 drop-shadow-lg"
               />
             </button>
           </div>
