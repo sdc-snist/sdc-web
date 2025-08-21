@@ -26,7 +26,7 @@ const FAQPage = () => {
   ];
 
   return (
-    <section className="section py-20 min-h-screen flex flex-col items-center">
+  <section className="section section-alt py-20 min-h-screen flex flex-col items-center">
       {/* Header Section */}
       <div className="max-w-4xl text-center mb-14">
         <h1 className="text-4xl lg:text-5xl font-extrabold text-white mb-2">Frequently <span className="text-[var(--color-primary)]">Asked Questions</span></h1>
@@ -36,7 +36,7 @@ const FAQPage = () => {
       </div>
 
       {/* Stats Section */}
-      <div className="max-w-6xl w-full grid grid-cols-1 sm:grid-cols-3 gap-8 mb-16">
+      {/* <div className="max-w-6xl w-full grid grid-cols-1 sm:grid-cols-3 gap-8 mb-16">
         <div className="card bg-[var(--color-card)] text-center p-8">
           <h3 className="text-4xl font-extrabold text-[var(--color-primary)]">10,000+</h3>
           <p className="mt-2 text-[var(--color-text-muted)]">Registered Members</p>
@@ -49,7 +49,7 @@ const FAQPage = () => {
           <h3 className="text-4xl font-extrabold text-[var(--color-primary)]">20+</h3>
           <p className="mt-2 text-[var(--color-text-muted)]">Industry Collaborations</p>
         </div>
-      </div>
+      </div> */}
 
       {/* FAQ Section */}
       <div className="max-w-3xl w-full">

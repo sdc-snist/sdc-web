@@ -4,7 +4,7 @@ import { FaInstagram, FaLinkedin, FaTwitter, FaYoutube } from "react-icons/fa";
 
 const Footer = () => {
   return (
-  <footer className="footer relative overflow-hidden pt-36 pb-14">
+  <footer className="footer section-alt relative overflow-hidden pt-36 pb-14">
       {/* Large background brand text above links */}
       <div className="w-full flex justify-center mb-6 relative z-10">
         <span
