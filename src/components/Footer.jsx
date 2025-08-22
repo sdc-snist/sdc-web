@@ -1,6 +1,6 @@
 // Footer.jsx
 import React from "react";
-import { FaInstagram, FaLinkedin, FaTwitter, FaYoutube } from "react-icons/fa";
+import { FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -52,16 +52,15 @@ const Footer = () => {
         <div className="text-left">
           <h3 className="font-extrabold text-2xl text-white mb-2 tracking-wide">Contact</h3>
           <ul className="space-y-2 text-base">
-            <li><span className="text-[var(--color-text-muted)]">General Queries</span><br /><a href="mailto:team@sdc.com" className="text-white font-semibold">team@sdc.com</a></li>
-            <li><span className="text-[var(--color-text-muted)]">Support</span><br /><a href="mailto:support@sdc.com" className="text-white font-semibold">support@sdc.com</a></li>
+            <li><span className="text-[var(--color-text-muted)]">General Queries</span><br /><a href="mailto:sdc@sreenidhi.edu.in" className="text-white font-semibold">sdc@sreenidhi.edu.in</a></li>
+            <li><span className="text-[var(--color-text-muted)]">Support</span><br /><a href="mailto:sdc@sreenidhi.edu.in" className="text-white font-semibold">sdc@sreenidhi.edu.in</a></li>
           </ul>
         </div>
       </div>
   <div className="relative z-10 flex justify-center gap-12 mt-12 mb-6">
         <a href="https://www.linkedin.com/company/sdc-snist-student-chapter" target="_blank" rel="noopener noreferrer"><FaLinkedin className="text-white text-2xl hover:text-[var(--color-primary)] transition" /></a>
-        <a href="https://www.youtube.com/@sdc-snistsc" target="_blank" rel="noopener noreferrer"><FaYoutube className="text-white text-2xl hover:text-[var(--color-primary)] transition" /></a>
-        <a href="https://twitter.com/SDC_SNIST" target="_blank" rel="noopener noreferrer"><FaTwitter className="text-white text-2xl hover:text-[var(--color-primary)] transition" /></a>
-        <a href="https://www.instagram.com/sdc.snist" target="_blank" rel="noopener noreferrer"><FaInstagram className="text-white text-2xl hover:text-[var(--color-primary)] transition" /></a>
+        <a href="https://x.com/SDC_SNIST" target="_blank" rel="noopener noreferrer"><FaTwitter className="text-white text-2xl hover:text-[var(--color-primary)] transition" /></a>
+        <a href="https://www.instagram.com/sdc.snist?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer"><FaInstagram className="text-white text-2xl hover:text-[var(--color-primary)] transition" /></a>
       </div>
       <div className="relative z-10 text-center text-[var(--color-text-muted)] text-base pb-2 mt-4">
         © {new Date().getFullYear()} Students Developers Community. All rights reserved. &nbsp; | &nbsp;

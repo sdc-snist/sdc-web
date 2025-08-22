@@ -45,6 +45,12 @@ const Navbar = ({ onLinkClick, refs }) => {
               About Us
             </button>
             <button
+              onClick={() => navigate("/recent-activity")}
+              className="text-white hover:text-[var(--color-primary)] px-3 py-2 rounded-md text-lg font-semibold transition-colors cursor-pointer relative after:content-[''] after:block after:w-0 after:h-[2px] after:bg-[var(--color-primary)] after:transition-all after:duration-300 hover:after:w-full after:absolute after:left-0 after:bottom-0"
+            >
+              Recent Activity
+            </button>
+            <button
               onClick={() => navigate("/FAQs")}
               className="text-white hover:text-[var(--color-primary)] px-3 py-2 rounded-md text-lg font-semibold transition-colors cursor-pointer relative after:content-[''] after:block after:w-0 after:h-[2px] after:bg-[var(--color-primary)] after:transition-all after:duration-300 hover:after:w-full after:absolute after:left-0 after:bottom-0"
             >

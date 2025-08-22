@@ -19,7 +19,13 @@ const Landing = () => {
       </h1>
       <div className="w-full flex flex-col md:flex-row items-center justify-center mt-2 mb-0">
         <div className="w-full md:w-1/2 flex justify-center md:justify-end order-2 md:order-1 mt-10 md:mt-0">
-          <a className="btn bg-[var(--color-primary)] hover:bg-[var(--color-primary-light)] text-black font-bold text-xl px-10 py-4 rounded-xl shadow-xl transition-all duration-200 mt-8" style={{color: '#000'}} href="#events">
+          <a
+            className="btn bg-[var(--color-primary)] hover:bg-[var(--color-primary-light)] text-black font-bold text-xl px-10 py-4 rounded-xl shadow-xl transition-all duration-200 mt-8"
+            style={{ color: '#000' }}
+            href="https://docs.google.com/forms/d/e/1FAIpQLSdy6mWBc9lSZockABrJkKhEXVx3beMktihwfx-uHf_tTC6O0g/viewform"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Join Community
           </a>
         </div>
