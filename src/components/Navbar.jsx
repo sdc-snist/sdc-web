@@ -45,6 +45,12 @@ const Navbar = ({ onLinkClick, refs }) => {
               About Us
             </button>
             <button
+              onClick={() => navigate("/gallery")}
+              className="text-white hover:text-[var(--color-primary)] px-3 py-2 rounded-md text-lg font-semibold transition-colors cursor-pointer relative after:content-[''] after:block after:w-0 after:h-[2px] after:bg-[var(--color-primary)] after:transition-all after:duration-300 hover:after:w-full after:absolute after:left-0 after:bottom-0"
+            >
+              Gallery
+            </button>
+            <button
               onClick={() => navigate("/recent-activity")}
               className="text-white hover:text-[var(--color-primary)] px-3 py-2 rounded-md text-lg font-semibold transition-colors cursor-pointer relative after:content-[''] after:block after:w-0 after:h-[2px] after:bg-[var(--color-primary)] after:transition-all after:duration-300 hover:after:w-full after:absolute after:left-0 after:bottom-0"
             >
@@ -114,6 +120,24 @@ const Navbar = ({ onLinkClick, refs }) => {
             className="block text-white hover:text-[var(--color-primary)] px-3 py-3 rounded-lg text-lg font-semibold w-full text-left transition-colors"
           >
             About Us
+          </button>
+          <button
+            onClick={() => {
+              navigate("/gallery");
+              toggleMenu();
+            }}
+            className="block text-white hover:text-[var(--color-primary)] px-3 py-3 rounded-lg text-lg font-semibold w-full text-left transition-colors"
+          >
+            Gallery
+          </button>
+          <button
+            onClick={() => {
+              navigate("/recent-activity");
+              toggleMenu();
+            }}
+            className="block text-white hover:text-[var(--color-primary)] px-3 py-3 rounded-lg text-lg font-semibold w-full text-left transition-colors"
+          >
+            Recent Activity
           </button>
           <button
             onClick={() => {

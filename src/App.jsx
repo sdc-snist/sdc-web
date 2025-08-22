@@ -24,6 +24,7 @@ import FAQ from "./components/FAQ";
 import Footer from "./components/Footer";
 import AIagent from "./components/AIagent";
 import RecentActivity from "./components/RecentActivity";
+import EventGallery from "./components/EventGallery";
 
 // Home component
 function Home() {
@@ -85,7 +86,8 @@ function AppWrapper() {
           element={<BackendDevelopment />}
         />
         <Route path="/events" element={<Events />} />
-        <Route path="/recent-activity" element={<RecentActivity />} />
+  <Route path="/recent-activity" element={<RecentActivity />} />
+  <Route path="/gallery" element={<EventGallery />} />
       </Routes>
       <Footer />
     </>
