@@ -1,12 +1,14 @@
 
 import { Calendar, Mail } from "lucide-react";
 import sdcImage from "../assets/sdc1.png";
+import useSectionInView from "../hooks/useSectionInView";
 
 const Landing = () => {
+  const [ref, inView] = useSectionInView();
   return (
-  <section className="section relative overflow-hidden min-h-[90vh] flex flex-col items-center justify-center">
-    <div className="absolute inset-0 bg-[var(--color-bg)] opacity-100 z-0"></div>
-  <div className="relative z-10 w-full max-w-7xl mx-auto flex flex-col items-center justify-center px-2 sm:px-8 pb-0">
+    <section ref={ref} className={`section relative overflow-hidden min-h-[90vh] flex flex-col items-center justify-center transition-all duration-1000 ${inView ? 'animate-fade-slide' : 'opacity-0 translate-y-10'}`}> 
+      <div className="absolute inset-0 bg-[var(--color-bg)] opacity-100 z-0"></div>
+      <div className="relative z-10 w-full max-w-7xl mx-auto flex flex-col items-center justify-center px-2 sm:px-8 pb-0">
       <h1
         className="w-full text-center font-extrabold text-white text-[2.5rem] sm:text-[4rem] md:text-[5.5rem] leading-[1.08] mb-0 tracking-tight"
         style={{ fontFamily: 'Inter, Segoe UI, Arial, sans-serif', letterSpacing: '-0.03em' }}
@@ -27,16 +29,16 @@ const Landing = () => {
       </div>
       <div className="w-full flex flex-row items-center justify-center gap-12 mt-16 mb-0">
         <div className="flex-1 flex flex-col items-center">
-          <div className="text-4xl md:text-5xl font-extrabold text-white mb-2">1500+</div>
-          <div className="text-xl text-[var(--color-text-muted)]">Members</div>
+          <div className="text-2xl sm:text-3xl md:text-5xl font-extrabold text-white mb-2">1500+</div>
+          <div className="text-base sm:text-lg md:text-xl text-[var(--color-text-muted)]">Members</div>
         </div>
         <div className="flex-1 flex flex-col items-center">
-          <div className="text-4xl md:text-5xl font-extrabold text-white mb-2">60+</div>
-          <div className="text-xl text-[var(--color-text-muted)]">Events</div>
+          <div className="text-2xl sm:text-3xl md:text-5xl font-extrabold text-white mb-2">60+</div>
+          <div className="text-base sm:text-lg md:text-xl text-[var(--color-text-muted)]">Events</div>
         </div>
         <div className="flex-1 flex flex-col items-center">
-          <div className="text-4xl md:text-5xl font-extrabold text-white mb-2">15K+</div>
-          <div className="text-xl text-[var(--color-text-muted)]">Students Impacted</div>
+          <div className="text-2xl sm:text-3xl md:text-5xl font-extrabold text-white mb-2">15K+</div>
+          <div className="text-base sm:text-lg md:text-xl text-[var(--color-text-muted)]">Students Impacted</div>
         </div>
       </div>
     </div>

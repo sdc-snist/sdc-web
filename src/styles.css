@@ -1,3 +1,58 @@
+@keyframes fade-slide {
+	0% {
+		opacity: 0;
+		transform: translateY(40px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+.animate-fade-slide {
+	animation: fade-slide 1s cubic-bezier(0.4,0.2,0.2,1) both;
+}
+/* SDC Loader Animation */
+@keyframes sdc-italic-anim {
+	0% {
+		opacity: 0;
+		transform: skewX(-20deg) scale(0.8) translateY(40px);
+		letter-spacing: -0.2em;
+	}
+	40% {
+		opacity: 1;
+		transform: skewX(-20deg) scale(1.1) translateY(-10px);
+		letter-spacing: 0.1em;
+	}
+	60% {
+		opacity: 1;
+		transform: skewX(-20deg) scale(1.05) translateY(0px);
+		letter-spacing: 0.05em;
+	}
+	100% {
+		opacity: 1;
+		transform: skewX(-20deg) scale(1) translateY(0px);
+		letter-spacing: -0.03em;
+	}
+}
+
+.animate-sdc-loader {
+	animation: sdc-italic-anim 1.2s cubic-bezier(0.7,0.2,0.2,1.1) forwards;
+}
+
+@keyframes loader-word {
+	0% { opacity: 0; transform: translateY(20px); }
+	40% { opacity: 1; transform: translateY(0); }
+	100% { opacity: 1; transform: translateY(0); }
+}
+.animate-loader-word-1 {
+	animation: loader-word 0.5s 1.1s forwards;
+}
+.animate-loader-word-2 {
+	animation: loader-word 0.5s 1.5s forwards;
+}
+.animate-loader-word-3 {
+	animation: loader-word 0.5s 1.9s forwards;
+}
 @import "tailwindcss";
 
 /* --- SDC Web Revamp: Black & Light Red Theme --- */

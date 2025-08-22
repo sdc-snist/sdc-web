@@ -1,9 +1,12 @@
 
 import sdcGroup from "../assets/sdcGroup.png";
 
+import useSectionInView from "../hooks/useSectionInView";
+
 const AboutUs = () => {
+  const [ref, inView] = useSectionInView();
   return (
-  <section className="section section-alt py-20 px-2 sm:px-4">
+    <section ref={ref} className={`section section-alt py-20 px-2 sm:px-4 transition-all duration-1000 ${inView ? 'animate-fade-slide' : 'opacity-0 translate-y-10'}`}>
       {/* About Us Heading */}
   <div className="text-center mb-6 px-1">
         <h2
@@ -27,7 +30,7 @@ const AboutUs = () => {
 
       {/* Community Description */}
   <div className="mb-14 px-2 sm:px-4 max-w-6xl mx-auto ">
-    <p className="text-2xl">
+  <p className="text-base sm:text-xl md:text-2xl text-[var(--color-text-muted)]">
           SDC is a vibrant, inclusive community of student developers, innovators, and tech enthusiasts. We believe in the power of collaboration, hands-on learning, and peer support to unlock every student's potential. Through workshops, events, and real-world projects, we empower our members to grow their skills, build lasting connections, and make a real impact in the tech world. Whether you're just starting out or looking to level up, you'll find inspiration, mentorship, and opportunity at SDC.
         </p>
       </div>

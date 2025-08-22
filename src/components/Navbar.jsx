@@ -28,25 +28,25 @@ const Navbar = ({ onLinkClick, refs }) => {
           <div className="hidden md:flex items-center space-x-8">
             <button
               onClick={() => navigate("/")}
-              className="text-white hover:text-[var(--color-primary)] px-3 py-2 rounded-md text-lg font-semibold transition-colors"
+              className="text-white hover:text-[var(--color-primary)] px-3 py-2 rounded-md text-lg font-semibold transition-colors cursor-pointer relative after:content-[''] after:block after:w-0 after:h-[2px] after:bg-[var(--color-primary)] after:transition-all after:duration-300 hover:after:w-full after:absolute after:left-0 after:bottom-0"
             >
               Home
             </button>
             <button
               onClick={() => navigate("/events")}
-              className="text-white hover:text-[var(--color-primary)] px-3 py-2 rounded-md text-lg font-semibold transition-colors"
+              className="text-white hover:text-[var(--color-primary)] px-3 py-2 rounded-md text-lg font-semibold transition-colors cursor-pointer relative after:content-[''] after:block after:w-0 after:h-[2px] after:bg-[var(--color-primary)] after:transition-all after:duration-300 hover:after:w-full after:absolute after:left-0 after:bottom-0"
             >
               Events
             </button>
             <button
               onClick={() => navigate("/about-us")}
-              className="text-white hover:text-[var(--color-primary)] px-3 py-2 rounded-md text-lg font-semibold transition-colors"
+              className="text-white hover:text-[var(--color-primary)] px-3 py-2 rounded-md text-lg font-semibold transition-colors cursor-pointer relative after:content-[''] after:block after:w-0 after:h-[2px] after:bg-[var(--color-primary)] after:transition-all after:duration-300 hover:after:w-full after:absolute after:left-0 after:bottom-0"
             >
               About Us
             </button>
             <button
               onClick={() => navigate("/FAQs")}
-              className="text-white hover:text-[var(--color-primary)] px-3 py-2 rounded-md text-lg font-semibold transition-colors"
+              className="text-white hover:text-[var(--color-primary)] px-3 py-2 rounded-md text-lg font-semibold transition-colors cursor-pointer relative after:content-[''] after:block after:w-0 after:h-[2px] after:bg-[var(--color-primary)] after:transition-all after:duration-300 hover:after:w-full after:absolute after:left-0 after:bottom-0"
             >
               FAQs
             </button>

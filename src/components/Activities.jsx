@@ -28,7 +28,7 @@ const activities = [
   },
   {
     img: Workshop,
-    heading: ["Hack", "athons"],
+    heading: ["Hack","athons"],
     features: [
       "Team challenges",
       "Innovative solutions",
@@ -39,9 +39,12 @@ const activities = [
   },
 ];
 
+import useSectionInView from "../hooks/useSectionInView";
+
 function Activities() {
+  const [ref, inView] = useSectionInView();
   return (
-    <section className="section section-alt py-16">
+    <section ref={ref} className={`section section-alt py-16 transition-all duration-1000 ${inView ? 'animate-fade-slide' : 'opacity-0 translate-y-10'}`}>
       <div className="flex justify-center text-center items-center mb-12">
         <h2 className="text-4xl lg:text-5xl font-extrabold mb-2 relative inline-block">
           <span className="bg-gradient-to-r from-[#ff4c4c] to-[#ff6b6b] bg-clip-text text-transparent drop-shadow-lg">
@@ -60,7 +63,7 @@ function Activities() {
             style={{ minHeight: '410px' }}
           >
             <h3 className="text-4xl md:text-5xl font-extrabold italic text-center mb-4 tracking-tight">
-              <span className={`bg-gradient-to-r ${act.accent} bg-clip-text text-transparent italic`}>{act.heading[0]}</span>{' '}
+              <span className={`bg-gradient-to-r ${act.accent} bg-clip-text text-transparent italic`}>{act.heading[0]}</span>
               <span className="text-white italic">{act.heading[1]}</span>
             </h3>
             <ul className="mt-2 text-lg md:text-xl text-[var(--color-text-muted)] font-semibold w-full max-w-xs mx-auto divide-y divide-[var(--color-border)]">
