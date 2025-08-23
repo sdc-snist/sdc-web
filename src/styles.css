@@ -152,3 +152,14 @@ a:hover {
 	text-align: center;
 	font-size: 1rem;
 }
+
+@keyframes shine {
+  0% { background-position: 300% 0; }
+  100% { background-position: 0 0; }
+}
+.animate-shine {
+  animation: shine 2.5s linear infinite;
+  background-size: 300% 100%;
+  /* More opaque gradient colors */
+  background-image: linear-gradient(90deg, rgba(255,76,76,0.95) 0%, rgba(255,255,255,1) 50%, rgba(255,107,107,0.95) 100%);
+}

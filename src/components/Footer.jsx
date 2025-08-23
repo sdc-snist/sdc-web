@@ -22,7 +22,7 @@ const Footer = () => {
           }}
           className="uppercase text-center max-w-full md:text-[5vw] md:opacity-[0.09]"
         >
-          STUDENTS DEVELOPERS<br />COMMUNITY
+          STUDENT DEVELOPERS<br />COMMUNITY
         </span>
       </div>
   <div className="relative z-20 max-w-7xl mx-auto px-4 grid grid-cols-2 grid-rows-2 md:grid-cols-4 md:grid-rows-1 gap-14 items-start text-lg">
@@ -63,7 +63,7 @@ const Footer = () => {
         <a href="https://www.instagram.com/sdc.snist?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer"><FaInstagram className="text-white text-2xl hover:text-[var(--color-primary)] transition" /></a>
       </div>
       <div className="relative z-10 text-center text-[var(--color-text-muted)] text-base pb-2 mt-4">
-        © {new Date().getFullYear()} Students Developers Community. All rights reserved. &nbsp; | &nbsp;
+        © {new Date().getFullYear()} Student Developers Community. All rights reserved. &nbsp; | &nbsp;
         <a href="#" className="hover:text-white">Privacy Policy</a> &nbsp; | &nbsp;
         <a href="#" className="hover:text-white">Terms of Service</a>
       </div>

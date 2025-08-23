@@ -1,7 +1,9 @@
 
+
 import TechTalks from "../assets/TechTalks.svg";
 import Hackathon from "../assets/hackathon.svg";
 import Workshop from "../assets/workshop.svg";
+import BackendText from "../assets/backend-text.png";
 
 const activities = [
   {
@@ -37,6 +39,17 @@ const activities = [
     ],
     accent: "from-[#ff4c4c] to-[#ff6b6b]",
   },
+  {
+    img: BackendText,
+    heading: ["Boot", "camps"],
+    features: [
+      "10-day immersive learning",
+      "Project-based curriculum",
+      "Mentor guidance",
+      "Build real-world apps"
+    ],
+    accent: "from-[#ff4c4c] to-[#ff6b6b]",
+  },
 ];
 
 import useSectionInView from "../hooks/useSectionInView";
@@ -44,7 +57,7 @@ import useSectionInView from "../hooks/useSectionInView";
 function Activities() {
   const [ref, inView] = useSectionInView();
   return (
-    <section ref={ref} className={`section section-alt py-16 transition-all duration-1000 ${inView ? 'animate-fade-slide' : 'opacity-0 translate-y-10'}`}>
+  <section ref={ref} className={`section section-alt py-8 sm:py-16 transition-all duration-1000 ${inView ? 'animate-fade-slide' : 'opacity-0 translate-y-10'}`}>
       <div className="flex justify-center text-center items-center mb-12">
         <h2 className="text-4xl lg:text-5xl font-extrabold mb-2 relative inline-block">
           <span className="bg-gradient-to-r from-[#ff4c4c] to-[#ff6b6b] bg-clip-text text-transparent drop-shadow-lg">
@@ -53,14 +66,14 @@ function Activities() {
           <span className="block text-white">Activities</span>
         </h2>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 px-4">
+  <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 sm:gap-8 px-2 sm:px-4">
         {activities.map((act, idx) => (
           <div
             key={idx}
             className={
-              `flex flex-col items-center bg-[var(--color-card)] border border-[var(--color-border)] rounded-3xl shadow-xl p-8 pt-7 transition-transform duration-300 hover:scale-105 hover:-translate-y-1 relative overflow-hidden`
+              `flex flex-col items-center bg-[var(--color-card)] border border-[var(--color-border)] rounded-2xl shadow-lg p-4 sm:p-6 md:p-7 transition-transform duration-300 hover:scale-105 hover:-translate-y-1 relative overflow-hidden w-full max-w-xs mx-auto`
             }
-            style={{ minHeight: '410px' }}
+            style={{ minHeight: '300px' }}
           >
             <h3 className="text-4xl md:text-5xl font-extrabold italic text-center mb-4 tracking-tight">
               <span className={`bg-gradient-to-r ${act.accent} bg-clip-text text-transparent italic`}>{act.heading[0]}</span>

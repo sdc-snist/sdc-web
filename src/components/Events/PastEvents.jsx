@@ -63,15 +63,17 @@ const PastEvents = () => {
         className="text-[2.5rem] sm:text-[4rem] md:text-[5.5rem] font-extrabold italic tracking-tight text-white mb-10 leading-tight"
         style={{ fontFamily: 'Inter, Segoe UI, Arial, sans-serif', letterSpacing: '-0.03em' }}
       >
-        <span className="text-[var(--color-primary)] not-italic">Past Events</span>
+        <span className="text-white not-italic">Past</span>{' '}
+        <span className="text-[var(--color-primary)] not-italic">Events</span>
       </h2>
 
-      {/* Events Grid using flex */}
-      <div className="flex flex-wrap justify-center gap-8">
+  {/* Events Grid using responsive grid */}
+  <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 sm:gap-8 px-2 sm:px-4">
         {visibleEvents.map((event, index) => (
           <div
             key={index}
-            className="card bg-[var(--color-card)] border border-[var(--color-border)] rounded-2xl shadow-lg overflow-hidden relative w-full max-w-xs min-w-[270px] transition-all duration-300 hover:scale-105 hover:-translate-y-1"
+            className="card bg-[var(--color-card)] border border-[var(--color-border)] rounded-2xl shadow-lg overflow-hidden relative w-full max-w-xs mx-auto transition-all duration-300 hover:scale-105 hover:-translate-y-1"
+            style={{ minHeight: '300px' }}
           >
             {/* Completed Badge */}
             <div className="absolute top-3 right-3 bg-[var(--color-primary)] text-white text-xs font-semibold px-3 py-1 rounded-full z-10 shadow-md">
