@@ -1,7 +1,9 @@
 
+
 import TechTalks from "../assets/TechTalks.svg";
 import Hackathon from "../assets/hackathon.svg";
 import Workshop from "../assets/workshop.svg";
+import BackendText from "../assets/backend-text.png";
 
 const activities = [
   {
@@ -37,6 +39,17 @@ const activities = [
     ],
     accent: "from-[#ff4c4c] to-[#ff6b6b]",
   },
+  {
+    img: BackendText,
+    heading: ["Boot", "camps"],
+    features: [
+      "10-day immersive learning",
+      "Project-based curriculum",
+      "Mentor guidance",
+      "Build real-world apps"
+    ],
+  accent: "from-[#ff4c4c] to-[#ff6b6b]",
+  },
 ];
 
 import useSectionInView from "../hooks/useSectionInView";
@@ -53,7 +66,7 @@ function Activities() {
           <span className="block text-white">Activities</span>
         </h2>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 px-4">
+  <div className="grid grid-cols-2 lg:grid-cols-4 gap-10 px-4">
         {activities.map((act, idx) => (
           <div
             key={idx}

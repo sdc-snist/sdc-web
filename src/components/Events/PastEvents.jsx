@@ -66,8 +66,8 @@ const PastEvents = () => {
         <span className="text-[var(--color-primary)] not-italic">Past Events</span>
       </h2>
 
-      {/* Events Grid using flex */}
-      <div className="flex flex-wrap justify-center gap-8">
+  {/* Events Grid using grid */}
+  <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 justify-center">
         {visibleEvents.map((event, index) => (
           <div
             key={index}
