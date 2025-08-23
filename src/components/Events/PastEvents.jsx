@@ -60,7 +60,7 @@ const PastEvents = () => {
   <section className="section section-alt py-16 px-4 text-center">
       {/* Heading */}
       <h2
-        className="text-[2.5rem] sm:text-[4rem] md:text-[5.5rem] font-extrabold italic tracking-tight text-white mb-10 leading-tight"
+  className="text-2xl sm:text-3xl md:text-[5.5rem] font-extrabold italic tracking-tight text-white mb-10 leading-tight"
         style={{ fontFamily: 'Inter, Segoe UI, Arial, sans-serif', letterSpacing: '-0.03em' }}
       >
         <span className="text-white not-italic">Past</span>{' '}
@@ -88,17 +88,17 @@ const PastEvents = () => {
             {/* Content */}
             <div className="p-5 text-left flex flex-col justify-between h-56">
               <div>
-                <p className="text-sm text-[var(--color-primary)] font-semibold mb-1">
+                <p className="text-xs sm:text-sm text-[var(--color-primary)] font-semibold mb-1">
                   {event.date}
                 </p>
-                <h4 className="font-bold text-lg text-white mb-2">
+                <h4 className="font-bold text-base sm:text-lg text-white mb-2">
                   {event.title}
                 </h4>
-                <p className="text-sm text-[var(--color-text-muted)] line-clamp-3">
+                <p className="text-xs sm:text-sm text-[var(--color-text-muted)] line-clamp-3">
                   {event.description}
                 </p>
               </div>
-              <div className="flex justify-between pt-4 text-xs text-[var(--color-text-muted)] font-semibold">
+              <div className="flex justify-between pt-4 text-[10px] sm:text-xs text-[var(--color-text-muted)] font-semibold">
                 <span>Location: {event.location}</span>
                 <span>Participants: {event.participants}</span>
               </div>

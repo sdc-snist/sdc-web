@@ -67,7 +67,7 @@ const Landing = () => {
   const [ref, inView] = useSectionInView();
   return (
     <>
-      <section ref={ref} className={`section relative overflow-hidden min-h-[90vh] flex flex-col items-center justify-center pt-6 pb-6 sm:pt-12 sm:pb-12 transition-all duration-1000 ${inView ? 'animate-fade-slide' : 'opacity-0 translate-y-10'}`}> 
+  <section ref={ref} className={`section relative overflow-hidden min-h-[90vh] flex flex-col items-center justify-center pt-0 pb-0 sm:pt-12 sm:pb-12 transition-all duration-1000 ${inView ? 'animate-fade-slide' : 'opacity-0 translate-y-10'}`}> 
         <div className="absolute inset-0 bg-[var(--color-bg)] opacity-100 z-0"></div>
         <div className="relative z-10 w-full max-w-7xl mx-auto flex flex-col items-center justify-center px-2 sm:px-8 pb-0">
           <h1
