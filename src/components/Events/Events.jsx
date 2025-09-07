@@ -11,7 +11,6 @@ const Events = () => {
       {/* <UpcomingEvents /> */}
       <PastEvents />
     </div>
-    
   );
 };
 
