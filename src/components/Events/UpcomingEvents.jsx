@@ -9,7 +9,6 @@ const events = [
     title: "Backend Development Summer Bootcamp",
     description: "Dive into the world of backend development with Backend Summer Bootcamp 2025 — a 10-day project-based journey crafted for aspiring developers and curious coders.",
     location: "Virtual",
-    
   },
 ];
 
