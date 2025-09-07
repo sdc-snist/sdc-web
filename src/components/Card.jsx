@@ -1,17 +1,16 @@
+
 function Card(props) {
   return (
-    <div className="flex flex-col align-center justify-center max-w-sm mx-auto mt-7 p-4 border-none rounded-lg shadow-[0px_15px_30px_rgba(0,0,0,0.3)] bg-white place-items-center 
-      transition-transform duration-300 ease-in-out transform hover:scale-105 hover:-translate-y-1 hover:shadow-[0px_20px_35px_rgba(0,0,0,0.4)]">
-      
+    <div className="card flex flex-col items-center justify-center max-w-sm mx-auto p-7 bg-[var(--color-card)] border border-[var(--color-border)] rounded-2xl shadow-lg transition-transform duration-300 hover:scale-105 hover:-translate-y-1">
       <img
         src={props.img}
         alt="card image"
-        className="w-auto h-auto object-contain rounded-lg mb-4 align-center"
+        className="w-20 h-20 object-contain rounded-xl mb-5 shadow-md bg-black"
       />
-      <h1 className="text-xl font-semibold text-center text-gray-800 mb-2">
-        {props.heading}
+      <h1 className="text-2xl font-bold text-center text-white mb-2 tracking-tight">
+        <span className="text-[var(--color-primary)]">{props.heading}</span>
       </h1>
-      <p className="text-sm text-center text-gray-600">{props.desc}</p>
+      <p className="text-base text-center text-[var(--color-text-muted)]">{props.desc}</p>
     </div>
   );
 }

@@ -18,10 +18,13 @@ import Activities from "./components/Activities";
 import AboutUs from "./components/AboutUs";
 import BackendDevelopment from "./components/Events/BackendDevelopment";
 import AiEvent from "./components/Events/AiEvent";
-import React, { useRef } from "react";
+import React, { useRef, useState, useEffect } from "react";
+import Loader from "./components/Loader";
 import FAQ from "./components/FAQ";
 import Footer from "./components/Footer";
 import AIagent from "./components/AIagent";
+import RecentActivity from "./components/RecentActivity";
+import EventGallery from "./components/EventGallery";
 
 // Home component
 function Home() {
@@ -57,10 +60,8 @@ function Home() {
         <FAQ />
       </div>      
       
-      <div ref={faqRef}>
-        <Footer />
-      </div>
-    </>
+  {/* Footer removed from Home, will be rendered globally */}
+  </>
   );
 }
 
@@ -78,23 +79,39 @@ function AppWrapper() {
       <Routes>
         <Route path="/aiagent" element={<AiEvent />} />
         <Route path="/" element={<Home />} />
-        <Route path="/about-us" element={ <AboutUs />} />
+        <Route path="/about-us" element={<AboutUs />} />
         <Route path="/FAQs" element={<FAQ />} />
         <Route
           path="/events/backend-development"
           element={<BackendDevelopment />}
         />
         <Route path="/events" element={<Events />} />
+  <Route path="/recent-activity" element={<RecentActivity />} />
+  <Route path="/gallery" element={<EventGallery />} />
       </Routes>
+      <Footer />
     </>
   );
 }
 
 function App() {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    // Loader: SDC anim (1.2s) + last word (1.9s + 0.5s) = 2.4s
+    const timer = setTimeout(() => setLoading(false), 2400);
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
-    <Router>
-      <AppWrapper />
-    </Router>
+    <>
+      {loading && <Loader />}
+      {!loading && (
+        <Router>
+          <AppWrapper />
+        </Router>
+      )}
+    </>
   );
 }
 
