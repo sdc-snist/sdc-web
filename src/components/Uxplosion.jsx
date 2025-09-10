@@ -111,6 +111,43 @@ function Uxplosion() {
               </p>
             </div>
 
+            {/* Pricing Section */}
+            <div className="mb-12">
+              <h3 className="text-4xl  font-bold text-white mb-8" style={{ fontFamily: 'Gilroy, Inter, system-ui, sans-serif' }}>
+                Registration Fee
+              </h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-2xl mx-auto">
+                {/* SDC Member Pricing */}
+                <div className="bg-gradient-to-br from-orange-500/20 to-pink-500/20 backdrop-blur-sm border border-orange-500/30 rounded-2xl p-6 relative overflow-hidden">
+                  <div className="absolute top-0 right-0 bg-gradient-to-r from-orange-500 to-pink-500 text-white px-3 py-1 rounded-bl-lg text-xs font-bold" style={{ fontFamily: 'Gilroy, Inter, system-ui, sans-serif' }}>
+                    MEMBER
+                  </div>
+                  <div className="text-center">
+                    <h4 className="text-lg font-semibold text-white mb-2" style={{ fontFamily: 'Gilroy, Inter, system-ui, sans-serif' }}>
+                      SDC Member
+                    </h4>
+                    <div className="text-4xl font-black text-transparent bg-gradient-to-r from-orange-400 to-pink-500 bg-clip-text mb-2" style={{ fontFamily: 'Gilroy, Inter, system-ui, sans-serif' }}>
+                      ₹49
+                    </div>
+                    <p className="text-gray-300 text-sm" style={{ fontFamily: 'Gilroy, Inter, system-ui, sans-serif' }}>Special member discount</p>
+                  </div>
+                </div>
+
+                {/* Non-SDC Member Pricing */}
+                <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-6">
+                  <div className="text-center">
+                    <h4 className="text-lg font-semibold text-white mb-2" style={{ fontFamily: 'Gilroy, Inter, system-ui, sans-serif' }}>
+                      Non-SDC Member
+                    </h4>
+                    <div className="text-4xl font-black text-white mb-2" style={{ fontFamily: 'Gilroy, Inter, system-ui, sans-serif' }}>
+                      ₹149
+                    </div>
+                    <p className="text-gray-300 text-sm" style={{ fontFamily: 'Gilroy, Inter, system-ui, sans-serif' }}>Regular registration</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
             {/* CTA Button */}
             <div className="relative">
               <button
@@ -120,7 +157,7 @@ function Uxplosion() {
                 className="group relative px-12 py-4 bg-gradient-to-r from-orange-500 via-pink-500 to-purple-600 rounded-2xl font-bold text-xl text-white shadow-2xl hover:shadow-orange-500/25 transition-all duration-300 transform hover:scale-105 hover:-translate-y-1"
               >
                 <span className="relative z-10 flex items-center space-x-3">
-                  <span>Register for FREE</span>
+                  <span>Register Now</span>
                   <Heart className={`w-6 h-6 transition-all duration-300 ${isHovered ? 'text-red-300' : 'text-white'}`} />
                 </span>
                 <div className="absolute inset-0 bg-gradient-to-r from-orange-600 via-pink-600 to-purple-700 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
