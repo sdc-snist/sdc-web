@@ -61,7 +61,7 @@ function Uxplosion() {
             <div className="flex items-center justify-between">
               {/* SDC Logo */}
               <div className="flex items-center">
-                <img src={sdcLogo} alt="SDC" className="h-12 w-auto" />
+                <img src={sdcLogo} alt="SDC" className="h-16 w-auto" />
               </div>
               
               {/* Register Button */}
@@ -90,17 +90,17 @@ function Uxplosion() {
                     UX
                   </span>
                   <span className="bg-gradient-to-r from-pink-500 via-purple-600 to-blue-500 bg-clip-text text-transparent">
-                    plosion
+                    plosion 2.0
                   </span>
                   <div className="absolute -top-4 -right-4 w-20 h-20 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-full blur-xl opacity-60 animate-pulse"></div>
                 </h1>
                 
-                <div className="relative">
+                {/* <div className="relative">
                   <h2 className="text-6xl md:text-8xl font-black text-transparent bg-gradient-to-r from-yellow-400 via-orange-500 to-red-500 bg-clip-text mb-8" style={{ fontFamily: 'Gilroy, Inter, system-ui, sans-serif' }}>
                     2.0
                   </h2>
                   <div className="absolute inset-0 bg-gradient-to-r from-yellow-400/20 to-orange-500/20 blur-3xl"></div>
-                </div>
+                </div> */}
               </div>
 
               <p className="text-xl md:text-2xl text-gray-300 font-light max-w-3xl mx-auto leading-relaxed" style={{ fontFamily: 'Gilroy, Inter, system-ui, sans-serif' }}>
@@ -337,7 +337,7 @@ function Uxplosion() {
                   <div className="flex items-center space-x-3">
                     <Phone className="w-5 h-5 text-orange-400" />
                     <span className="text-gray-300" style={{ fontFamily: 'Gilroy, Inter, system-ui, sans-serif' }}>
-                      +91 9876543210
+                      +91 99855 99923
                     </span>
                   </div>
                   <div className="flex items-center space-x-3">
@@ -369,14 +369,15 @@ function Uxplosion() {
                 <div className="space-y-4">
                   <div className="flex items-center space-x-3">
                     <Calendar className="w-5 h-5 text-pink-400" />
-                    <span className="text-gray-300" style={{ fontFamily: 'Gilroy, Inter, system-ui, sans-serif' }}>
-                      September 15-19, 2025
-                    </span>
+                    <div className="text-gray-300" style={{ fontFamily: 'Gilroy, Inter, system-ui, sans-serif' }}>
+                      <div>Online: September 15-19, 2025</div>
+                      <div>Offline: September 20, 2025</div>
+                    </div>
                   </div>
                   <div className="flex items-center space-x-3">
                     <MapPin className="w-5 h-5 text-pink-400" />
                     <span className="text-gray-300" style={{ fontFamily: 'Gilroy, Inter, system-ui, sans-serif' }}>
-                      SNIST Campus, Hyderabad
+                      Biotech Seminar Hall, SNIST
                     </span>
                   </div>
                   <div className="flex items-center space-x-3">
