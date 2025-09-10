@@ -33,6 +33,10 @@ function Uxplosion() {
     window.open("https://payments.cashfree.com/forms/ui-ux-workshop", "_blank");
   };
 
+  const handleLogoClick = () => {
+    window.open("https://sdcindia.tech", "_blank");
+  };
+
   const workshopDays = [
     { date: "Sept 15", topic: "Design Thinking Fundamentals", icon: "🎨" },
     { date: "Sept 16", topic: "User Research & Personas", icon: "👥" },
@@ -61,7 +65,12 @@ function Uxplosion() {
             <div className="flex items-center justify-between">
               {/* SDC Logo */}
               <div className="flex items-center">
-                <img src={sdcLogo} alt="SDC" className="h-12 md:h-16 w-auto" />
+                <img 
+                  src={sdcLogo} 
+                  alt="SDC" 
+                  className="h-12 md:h-16 w-auto cursor-pointer hover:opacity-80 transition-opacity duration-300" 
+                  onClick={handleLogoClick}
+                />
               </div>
               
               {/* Register Button */}
