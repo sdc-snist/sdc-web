@@ -12,6 +12,7 @@ import {
   Palette,
   Zap,
   Heart,
+  Mail,
 } from "lucide-react";
 
 
@@ -29,7 +30,7 @@ function Uxplosion() {
   }, []);
 
   const handleRegister = () => {
-    window.open("http://sdcindia.tech", "_blank");
+    window.open("https://payments.cashfree.com/forms/ui-ux-workshop", "_blank");
   };
 
   const workshopDays = [
@@ -140,7 +141,7 @@ function Uxplosion() {
                       Non-SDC Member
                     </h4>
                     <div className="text-4xl font-black text-white mb-2" style={{ fontFamily: 'Gilroy, Inter, system-ui, sans-serif' }}>
-                      ₹149
+                      ₹99
                     </div>
                     <p className="text-gray-300 text-sm" style={{ fontFamily: 'Gilroy, Inter, system-ui, sans-serif' }}>Regular registration</p>
                   </div>
@@ -322,6 +323,85 @@ function Uxplosion() {
             </div>
           </div>
         </section>
+
+        {/* Footer */}
+        <footer className="py-16 px-6 border-t border-white/10">
+          <div className="container mx-auto max-w-4xl">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-12">
+              {/* Contact Information */}
+              <div>
+                <h3 className="text-2xl font-bold text-white mb-6" style={{ fontFamily: 'Gilroy, Inter, system-ui, sans-serif' }}>
+                  Get in Touch
+                </h3>
+                <div className="space-y-4">
+                  <div className="flex items-center space-x-3">
+                    <Phone className="w-5 h-5 text-orange-400" />
+                    <span className="text-gray-300" style={{ fontFamily: 'Gilroy, Inter, system-ui, sans-serif' }}>
+                      +91 9876543210
+                    </span>
+                  </div>
+                  <div className="flex items-center space-x-3">
+                    <Mail className="w-5 h-5 text-orange-400" />
+                    <span className="text-gray-300" style={{ fontFamily: 'Gilroy, Inter, system-ui, sans-serif' }}>
+                      contact@sdcindia.tech
+                    </span>
+                  </div>
+                  <div className="flex items-center space-x-3">
+                    <Instagram className="w-5 h-5 text-orange-400" />
+                    <span className="text-gray-300" style={{ fontFamily: 'Gilroy, Inter, system-ui, sans-serif' }}>
+                      @sdc_snist
+                    </span>
+                  </div>
+                  <div className="flex items-center space-x-3">
+                    <Globe className="w-5 h-5 text-orange-400" />
+                    <span className="text-gray-300" style={{ fontFamily: 'Gilroy, Inter, system-ui, sans-serif' }}>
+                      www.sdcindia.tech
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Event Info */}
+              <div>
+                <h3 className="text-2xl font-bold text-white mb-6" style={{ fontFamily: 'Gilroy, Inter, system-ui, sans-serif' }}>
+                  Event Details
+                </h3>
+                <div className="space-y-4">
+                  <div className="flex items-center space-x-3">
+                    <Calendar className="w-5 h-5 text-pink-400" />
+                    <span className="text-gray-300" style={{ fontFamily: 'Gilroy, Inter, system-ui, sans-serif' }}>
+                      September 15-19, 2025
+                    </span>
+                  </div>
+                  <div className="flex items-center space-x-3">
+                    <MapPin className="w-5 h-5 text-pink-400" />
+                    <span className="text-gray-300" style={{ fontFamily: 'Gilroy, Inter, system-ui, sans-serif' }}>
+                      SNIST Campus, Hyderabad
+                    </span>
+                  </div>
+                  <div className="flex items-center space-x-3">
+                    <Clock className="w-5 h-5 text-pink-400" />
+                    <span className="text-gray-300" style={{ fontFamily: 'Gilroy, Inter, system-ui, sans-serif' }}>
+                      9:00 AM - 5:00 PM
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Made with Love */}
+            <div className="text-center border-t border-white/10 pt-8">
+              <p className="text-gray-400 flex items-center justify-center space-x-2" style={{ fontFamily: 'Gilroy, Inter, system-ui, sans-serif' }}>
+                <span>Made with</span>
+                <Heart className="w-4 h-4 text-red-500 animate-pulse" />
+                <span>by SDC Team</span>
+              </p>
+              <p className="text-gray-500 text-sm mt-2" style={{ fontFamily: 'Gilroy, Inter, system-ui, sans-serif' }}>
+                © 2025 Students Developers Community. All rights reserved.
+              </p>
+            </div>
+          </div>
+        </footer>
       </div>
     </div>
   );
