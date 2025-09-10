@@ -61,10 +61,10 @@ const Navbar = ({ onLinkClick, refs }) => {
               FAQs
             </button>
             <button
-              onClick={() => navigate("/aiagent")}
+              onClick={() => navigate("/uxplosion")}
               className="btn ml-4"
             >
-              🎉 AI Event
+              � UXplosion 2.0
             </button>
           </div>
 
@@ -148,12 +148,12 @@ const Navbar = ({ onLinkClick, refs }) => {
           </button>
           <button
             onClick={() => {
-              navigate("/aiagent");
+              navigate("/uxplosion");
               toggleMenu();
             }}
             className="btn w-full text-left mt-2"
           >
-            🎉 AI Event
+            � UXplosion 2.0
           </button>
         </div>
       )}

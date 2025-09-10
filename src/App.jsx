@@ -23,6 +23,7 @@ import Loader from "./components/Loader";
 import FAQ from "./components/FAQ";
 import Footer from "./components/Footer";
 import AIagent from "./components/AIagent";
+import Uxplosion from "./components/Uxplosion";
 import RecentActivity from "./components/RecentActivity";
 import EventGallery from "./components/EventGallery";
 
@@ -69,8 +70,11 @@ function Home() {
 function AppWrapper() {
   const location = useLocation();
 
-  const hideNavbarOnPaths = ["/aiagent"];
+  const hideNavbarOnPaths = ["/aiagent", "/uxplosion"];
   const hideNavbar = hideNavbarOnPaths.includes(location.pathname);
+
+  const hideFooterOnPaths = ["/aiagent", "/uxplosion"];
+  const hideFooter = hideFooterOnPaths.includes(location.pathname);
 
   return (
     <>
@@ -78,6 +82,7 @@ function AppWrapper() {
 
       <Routes>
         <Route path="/aiagent" element={<AiEvent />} />
+        <Route path="/uxplosion" element={<Uxplosion />} />
         <Route path="/" element={<Home />} />
         <Route path="/about-us" element={<AboutUs />} />
         <Route path="/FAQs" element={<FAQ />} />
@@ -89,7 +94,7 @@ function AppWrapper() {
   <Route path="/recent-activity" element={<RecentActivity />} />
   <Route path="/gallery" element={<EventGallery />} />
       </Routes>
-      <Footer />
+      {!hideFooter && <Footer />}
     </>
   );
 }
