@@ -64,7 +64,7 @@ const Navbar = ({ onLinkClick, refs }) => {
               onClick={() => navigate("/uxplosion")}
               className="btn ml-4"
             >
-              � UXplosion 2.0
+                UXplosion 2.0
             </button>
           </div>
 
