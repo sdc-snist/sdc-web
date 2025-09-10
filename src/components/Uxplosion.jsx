@@ -56,19 +56,19 @@ function Uxplosion() {
 
       <div className="relative z-10">
         {/* Minimal Navbar */}
-        <header className="absolute top-0 left-0 right-0 z-50">
-          <div className="container mx-auto px-8 py-6">
+        <header className="absolute top-0 left-0 right-0 z-50 mb-10 md:mb-0">
+          <div className="container mx-auto px-8 py-6 md:py-6">
             <div className="flex items-center justify-between">
               {/* SDC Logo */}
               <div className="flex items-center">
-                <img src={sdcLogo} alt="SDC" className="h-16 w-auto" />
+                <img src={sdcLogo} alt="SDC" className="h-12 md:h-16 w-auto" />
               </div>
               
               {/* Register Button */}
               <button
                 onClick={handleRegister}
-                className="px-8 py-3 bg-gradient-to-r from-orange-500 to-pink-500 hover:from-orange-600 hover:to-pink-600 rounded-full font-bold text-white transition-all duration-300 transform hover:scale-105 shadow-lg"
-                style={{ fontFamily: 'Gilroy, Inter, system-ui, sans-serif' }}
+                className="px-4 py-2 md:px-8 md:py-3 text-sm md:text-base bg-gradient-to-r from-orange-500 to-pink-500 hover:from-orange-600 hover:to-pink-600 rounded-full font-bold text-white transition-all duration-300 transform hover:scale-105 shadow-lg"
+                style={{ fontFamily: 'Gilroy, -apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif' }}
               >
                 Register Now
               </button>
@@ -78,7 +78,7 @@ function Uxplosion() {
 
 
         {/* Hero Section */}
-        <section className="relative py-20 px-6">
+        <section className="relative pt-32 pb-20 md:py-20 px-6">
           <div className="container mx-auto text-center max-w-5xl">
             {/* Event Title */}
             <div className="mb-12">
@@ -141,7 +141,7 @@ function Uxplosion() {
                       Non-SDC Member
                     </h4>
                     <div className="text-4xl font-black text-white mb-2" style={{ fontFamily: 'Gilroy, Inter, system-ui, sans-serif' }}>
-                      ₹99
+                      ₹149
                     </div>
                     <p className="text-gray-300 text-sm" style={{ fontFamily: 'Gilroy, Inter, system-ui, sans-serif' }}>Regular registration</p>
                   </div>
