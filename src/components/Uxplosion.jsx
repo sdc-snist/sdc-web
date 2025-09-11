@@ -293,7 +293,7 @@ function Uxplosion() {
                     </div>
                     <div className="flex items-center space-x-3">
                       <MapPin className="w-5 h-5" />
-                      <span>Admin Seminar Hall, SNIST</span>
+                      <span>Biotech seminar Hall, SNIST</span>
                     </div>
                   </div>
                 </div>
