@@ -79,7 +79,7 @@ function Uxplosion() {
                 className="px-4 py-2 md:px-8 md:py-3 text-sm md:text-base bg-gradient-to-r from-orange-500 to-pink-500 hover:from-orange-600 hover:to-pink-600 rounded-full font-bold text-white transition-all duration-300 transform hover:scale-105 shadow-lg"
                 style={{ fontFamily: 'Gilroy, -apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif' }}
               >
-                Register Now
+                Registrations closed 🚫
               </button>
             </div>
           </div>
