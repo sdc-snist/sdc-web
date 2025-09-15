@@ -75,8 +75,8 @@ function Uxplosion() {
               
               {/* Register Button */}
               <button
-                onClick={handleRegister}
-                className="px-4 py-2 md:px-8 md:py-3 text-sm md:text-base bg-gradient-to-r from-orange-500 to-pink-500 hover:from-orange-600 hover:to-pink-600 rounded-full font-bold text-white transition-all duration-300 transform hover:scale-105 shadow-lg"
+                // onClick={handleRegister}
+                className=" cursor-not-allowed px-4 py-2 md:px-8 md:py-3 text-sm md:text-base bg-gradient-to-r from-orange-500 to-pink-500 hover:from-orange-600 hover:to-pink-600 rounded-full font-bold text-white transition-all duration-300 transform hover:scale-105 shadow-lg"
                 style={{ fontFamily: 'Gilroy, -apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif' }}
               >
                 Registrations closed 🚫
@@ -166,9 +166,9 @@ function Uxplosion() {
                 onMouseLeave={() => setIsHovered(false)}
                 className="group relative px-12 py-4 bg-gradient-to-r from-orange-500 via-pink-500 to-purple-600 rounded-2xl font-bold text-xl text-white shadow-2xl hover:shadow-orange-500/25 transition-all duration-300 transform hover:scale-105 hover:-translate-y-1"
               >
-                <span className="relative z-10 flex items-center space-x-3">
-                  <span>Register Now</span>
-                  <Heart className={`w-6 h-6 transition-all duration-300 ${isHovered ? 'text-red-300' : 'text-white'}`} />
+                <span className=" cursor-not-allowed relative z-10 flex items-center space-x-3">
+                  <span>Registrations closed 🚫</span>
+                  {/* <Heart className={`w-6 h-6 transition-all duration-300 ${isHovered ? 'text-red-300' : 'text-white'}`} /> */}
                 </span>
                 <div className="absolute inset-0 bg-gradient-to-r from-orange-600 via-pink-600 to-purple-700 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </button>
