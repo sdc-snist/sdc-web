@@ -161,7 +161,7 @@ function Uxplosion() {
             {/* CTA Button */}
             <div className="relative">
               <button
-                onClick={handleRegister}
+                // onClick={handleRegister}
                 onMouseEnter={() => setIsHovered(true)}
                 onMouseLeave={() => setIsHovered(false)}
                 className="group relative px-12 py-4 bg-gradient-to-r from-orange-500 via-pink-500 to-purple-600 rounded-2xl font-bold text-xl text-white shadow-2xl hover:shadow-orange-500/25 transition-all duration-300 transform hover:scale-105 hover:-translate-y-1"
